@@ -28,9 +28,6 @@
     padding: 50px 0px;
   }
   #background {
-    background-color: #f6f8f9;
-    border-top: 1px solid #F8F9FB;
-    border-bottom: 1px solid #F8F9FB;
     margin-top: 50px;
     min-height: 100vh;
   }
