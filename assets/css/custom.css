@@ -1,0 +1,98 @@
+/*!
+
+=========================================================
+* CUSTOM CSS FOR ARGON
+=========================================================
+
+* Product Page: https://tweetpsa.github.io/
+* Copyright 2019 TWTPSA (https://twitter.com/twtpsa)
+* Licensed under MIT: (./LICENSE-TWTPSA.md)
+
+* Coded by twtpsa.
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+  body {
+  color: #3a3f52;
+  background-color: #f6f8f9;
+  }
+  .bg-light {
+  background-color: #f8f9fa!important; /* Overwrite CSS, there's two of them in Argon CSS btw */
+  }
+  .bg-light {
+    border-left: solid 2px #dedede;
+  }
+  section {
+    padding: 50px 0px;
+  }
+  #background {
+    background-color: #f6f8f9;
+    border-top: 1px solid #F8F9FB;
+    border-bottom: 1px solid #F8F9FB;
+    margin-top: 50px;
+    min-height: 100vh;
+  }
+  .box {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.04), 0 10px 16px 0 rgba(10, 31, 68, 0.06);
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-top: 30px;
+  }
+  i {
+    margin-right: 5px;
+    /* Adding space after Font Awesome icons  */
+  }
+  .nav-link i:not(.fa) {
+    position: relative;
+    top: 0px;
+  }
+  .dropdown-menu .dropdown-item > i, .dropdown-menu .dropdown-item > svg {
+    vertical-align: 0px;
+}
+  footer {
+    background-color: #292c31;
+    padding: 10px 0;
+    color: #62656a;
+  }
+  .figure-caption /* Original value too light */
+  {
+      font-size: 90%;
+
+      color: #212529;
+  }
+  .external-links {
+    color: #0095f7;
+  }
+  .btn-telegram {
+    /* Custom Color Button */
+    color: #FFFFFF;
+    background-color: #0088cc;
+  }
+  .btn-telegram:hover {
+    color: #fff;
+    background-color: #0296e0;
+    border-color: #0088cc;
+  }
+  .btn-android {
+    color: #fff;
+    background-color: #94b233;
+  }
+  .btn-android:hover {
+    color: #fff;
+    background-color: #a4c639;
+  }
+  .btn-apple {
+    color: #fff;
+    background-color: #000;
+  }
+  .btn-apple:hover {
+    color: #fff;
+    background-color: #323232;
+  }
+  .spacer {
+    margin-top: 10px;
+    /* define margin as you see fit */
+  }
