@@ -1,3 +1,12 @@
+/* TWTPSA Modification
+
+Adding  line 159 for auto copy link. =   anchor.setAttribute('onClick', 'copy_click(this.parentNode.id)');
+
+
+*/
+
+
+
 /* eslint-env amd, node */
 
 // https://github.com/umdjs/umd/blob/master/templates/returnExports.js

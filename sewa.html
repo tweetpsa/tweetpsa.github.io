@@ -193,7 +193,7 @@
 	<script src="./assets/vendor/popper/popper.min.js"></script>
 	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendor/headroom/headroom.min.js"></script>
-  <script src="./assets/js/anchor.js"></script>
+  <script src="./assets/js/modified-anchor.js"></script>
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.1"></script>
   <script>
@@ -203,6 +203,16 @@
   <script>
     anchors.options.visible = 'always';
     anchors.add('');
+  </script>
+  <script>
+  function copy_click(clicked_id){
+  var inp =document.createElement('input');
+  document.body.appendChild(inp)
+  inp.value = location.href + '#' + clicked_id
+  inp.select();
+  document.execCommand('copy',false);
+  inp.remove();
+  }
   </script>
 	<!-- JS SCRIPTS ENDS-->
 </body>
