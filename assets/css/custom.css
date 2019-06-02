@@ -123,3 +123,16 @@
     background-color: #7889e8;
     color: #fff;
   }
+  .tweet {
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+  padding: 0 13px;
+  line-height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+.tweet:hover {
+    background-color: #1b95e0;
+    border: 1px solid #1b95e0;
+  }
