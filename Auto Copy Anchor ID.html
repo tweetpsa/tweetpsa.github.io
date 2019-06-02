@@ -1,0 +1,20 @@
+
+
+<h2 id="linker">Linker<a onclick="copy_click(this.parentNode.id)" href="#">AAA</a></h2>
+
+
+<p id="POOP" onclick="copy_click(this.id)">hellorrrr man</p>
+
+<p id="ZOOP" onclick="copy_click(this.id)">ZORSD</p>
+
+
+<script>
+function copy_click(clicked_id){
+var inp =document.createElement('input');
+document.body.appendChild(inp)
+inp.value = location.href + '#' + clicked_id
+inp.select();
+document.execCommand('copy',false);
+inp.remove();
+}
+</script>

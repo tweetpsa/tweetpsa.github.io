@@ -147,7 +147,7 @@
         anchor = document.createElement('a');
         anchor.className = 'anchorjs-link ' + this.options.class;
         anchor.setAttribute('aria-label', this.options.ariaLabel);
-        anchor.setAttribute('onClick', 'CopyLink()');
+        anchor.setAttribute('onClick', 'copy_click(this.parentNode.id)');
         anchor.setAttribute('data-anchorjs-icon', this.options.icon);
 
         if (this.options.titleText) {
