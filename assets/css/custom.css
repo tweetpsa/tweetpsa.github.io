@@ -136,3 +136,7 @@
     background-color: #1b95e0;
     border: 1px solid #1b95e0;
   }
+  .tweet:focus {
+      background-color: #1b95e0;
+      border: 1px solid #1b95e0;
+    }
