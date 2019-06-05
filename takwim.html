@@ -27,186 +27,413 @@
 
 <body>
   <!-- NAVBAR -->
-<header class="header-global">
-  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
-    <div class="container">
-      <a class="navbar-brand mr-lg-5" href="./index.html">
-        <img src="./assets/img/brand/logo-white.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar_global">
-        <div class="navbar-collapse-header">
-          <div class="row">
-            <div class="col-6 collapse-brand">
-              <a href="./index.html">
-                <img src="./assets/img/brand/logo-blue.png">
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="./index.html">
+          <img src="./assets/img/brand/logo-white.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="./index.html">
+                  <img src="./assets/img/brand/logo-blue.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="fas fa-file"></i>
+                <span class="nav-link-inner--text">Panduan</span>
               </a>
-            </div>
-            <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </div>
+              <div class="dropdown-menu">
+                <a href="./junior" class="dropdown-item"><i class="fas fa-baby"></i>Panduan Daftar Junior</a>
+                <a href="./senior" class="dropdown-item"><i class="fas fa-child"></i>Panduan Daftar Senior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="./takwim" class="nav-link" role="button">
+                <i class="far fa-calendar-alt"></i>
+                <span class="nav-link-inner--text">Takwim</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./sewa" class="nav-link" role="button">
+                <i class="fas fa-home"></i>
+                <span class="nav-link-inner--text">Rumah Sewa</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="fas fa-arrow-down"></i>
+                <span class="nav-link-inner--text">Lain-lain</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="./program" class="dropdown-item"><i class="fas fa-file-alt"></i>Senarai Program</a>
+                <a href="./ambilan" class="dropdown-item"><i class="fas fa-calendar-check"></i>Pengambilan Pelajar Baru</a>
+                <a href="./lain" class="dropdown-item"><i class="fas fa-link"></i>Pautan Lain</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
+                <i class="fab fa-telegram-plane"></i>
+                <span class="nav-link-inner--text d-lg-none">Telegram</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-              <i class="fas fa-file"></i>
-              <span class="nav-link-inner--text">Panduan</span>
-            </a>
-            <div class="dropdown-menu">
-              <a href="./junior" class="dropdown-item"><i class="far fa-user"></i>Panduan Daftar Junior</a>
-              <a href="./senior" class="dropdown-item"><i class="fas fa-user"></i>Panduan Daftar Senior</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="./takwim" class="nav-link" role="button">
-              <i class="far fa-calendar-alt"></i>
-              <span class="nav-link-inner--text">Takwim Diploma Jun 2019</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="./sewa" class="nav-link" role="button">
-              <i class="fas fa-map-marked-alt"></i>
-              <span class="nav-link-inner--text">Jarak Rumah Sewa</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
-              <i class="fa fa-twitter"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
-              <i class="fab fa-telegram-plane"></i>
-              <span class="nav-link-inner--text d-lg-none">Telegram</span>
-            </a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
-</header> <!-- END NAVBAR -->
-	<!-- BOXS -->
-	<!-- box title -->
-	<section id="background">
-		<div class="container">
-				<h1>Takwim Akademik Politeknik Sesi Jun 2019 (Diploma)</h1>
-        <!-- Alert Box -->
-        <div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>Maklumat yang dipaparkan sah untuk Sesi Akademik Jun 2019 sahaja. Jika bercanggah dengan borang panduan, sila ikut <u>borang panduan.</u></em></div>
-        <!-- Alert Box ENDS -->
-        <!-- Tags -->
+    </nav>
+  </header> <!-- END NAVBAR -->
+  <!-- BOXS -->
+  <!-- box title -->
+  <section id="background">
+    <div class="container">
+      <!-- TABS -->
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active m-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Diploma Sepenuh Masa (JUN 2019)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Ijazah Sepenuh Masa (SEP 2019)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Lain-lain.</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- TAB Content -->
+          <h1>Takwim Akademik Politeknik Sesi Jun 2019 (Diploma)</h1>
+          <!-- Alert Box -->
+          <div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>Maklumat yang dipaparkan sah untuk Sesi Akademik Jun 2019 sahaja. Jika bercanggah dengan borang panduan, sila ikut
+              <u>borang panduan.</u></em></div>
+          <!-- Alert Box ENDS -->
+          <!-- Tags -->
           <div class="tags">
-              <span class="tag">Kemaskini</span>
-              <span class="tag">1 Jun 2019</span>
+            <span class="tag">Kemaskini</span>
+            <span class="tag">1 Jun 2019</span>
           </div>
-        <!-- END Tags -->
-			<!-- box title ends -->
+          <!-- END Tags -->
+          <!-- box title ends -->
 
-<table class="table table-borderless font-weight-bold">
-  <thead class="thead-dark text-center">
-    <tr>
-      <th scope="col">Tarikh</th>
-      <th scope="col">Bil. Minggu</th>
-      <th scope="col">Aktiviti</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr  class="table-info text-dark text-center">
-      <td>24 Jun - 30 Jun</td>
-      <td>1</td>
-      <td>Minggu Suai Kenal</td>
-    </tr>
-    <tr class="table-primary text-dark text-center">
-      <td>01 Julai - 11 Ogos</td>
-      <td>6</td>
-      <td>Kuliah</td>
-    </tr>
-    <tr class="table-success text-dark text-center">
-      <td>12 Ogos - 18 Ogos</td>
-      <td>1</td>
-      <td>Cuti Pertengahan Semester</td>
-    </tr>
-     <tr class="table-primary text-dark text-center">
-      <td>19 Ogos - 13 Oktober</td>
-      <td>8</td>
-      <td>Kuliah</td>
-    </tr>
-     <tr class="table-warning text-dark text-center">
-      <td>14 Oktober - 18 Oktober</td>
-      <td>1</td>
-      <td>Minggu Ulang Kaji</td>
-    </tr>
-    <tr class="table-danger  text-dark text-center">
-      <td>19 Oktober - 09 November</td>
-      <td>3</td>
-      <td>Minggu Peperiksaan Akhir</td>
-    </tr>
-    <tr class="table-success text-dark text-center">
-      <td>10 November - 08 Disember</td>
-      <td>4</td>
-      <td>Cuti Semester</td>
-    </tr>
-</table>
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">Tarikh</th>
+                <th scope="col">Bil. Minggu</th>
+                <th scope="col">Aktiviti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>24 Jun - 30 Jun</td>
+                <td>1</td>
+                <td>Minggu Suai Kenal</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>01 Julai - 11 Ogos</td>
+                <td>6</td>
+                <td>Kuliah</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>12 Ogos - 18 Ogos</td>
+                <td>1</td>
+                <td>Cuti Pertengahan Semester</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>19 Ogos - 13 Oktober</td>
+                <td>8</td>
+                <td>Kuliah</td>
+              </tr>
+              <tr class="table-warning text-dark text-center">
+                <td>14 Oktober - 18 Oktober</td>
+                <td>1</td>
+                <td>Minggu Ulang Kaji</td>
+              </tr>
+              <tr class="table-danger  text-dark text-center">
+                <td>19 Oktober - 09 November</td>
+                <td>3</td>
+                <td>Minggu Peperiksaan Akhir</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>10 November - 08 Disember</td>
+                <td>4</td>
+                <td>Cuti Semester</td>
+              </tr>
+          </table>
 
-<table class="table table-borderless font-weight-bold">
-  <thead class="thead-dark text-center">
-    <tr>
-      <th colspan="3">Latihan Industri</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr  class="table-info text-dark text-center">
-      <td>01 Julai - 17 November</td>
-    </tr>
-    <thead class="thead-dark text-center">
-    <tr>
-      <th colspan="3">Penilaian Latihan Industri</th>
-    </tr>
-  </thead>
-    <tr  class="table-danger text-dark text-center">
-      <td>18 November - 01 Disember</td>
-    </tr>
-    </table>
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th colspan="3">Latihan Industri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>01 Julai - 17 November</td>
+              </tr>
+              <thead class="thead-dark text-center">
+                <tr>
+                  <th colspan="3">Penilaian Latihan Industri</th>
+                </tr>
+              </thead>
+              <tr class="table-danger text-dark text-center">
+                <td>18 November - 01 Disember</td>
+              </tr>
+          </table>
 
-	<div class="alert alert-info" role="alert"><em><h4><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i></em>Cuti Umum</h4>
-	<ul class="text-default">
-	    <li><strong>Hari Keputeraan Seri Paduka Baginda
-Yang Dipertuan Agong</strong> - 27 Julai 2019 (Sabtu)</li>
-<li><strong>Hari Raya Aidil Adha</strong> - 11 Ogos 2019 (Ahad)</li>
-<li><strong>Hari Kebangsaan</strong> - 31 Ogos 2019 (Sabtu)</li>
-<li><strong>Awal Muharam</strong> - 1 September 2019 (Ahad)</li>
-<li><strong>Hari Malaysia</strong> - 16 September 2019 (Isnin)</li>
-<li><strong>Deepavali</strong> - 27 Oktober 2019 (Ahad)</li>
-<li><strong>Maulidur Rasul</strong> - 9 November 2019 (Sabtu)</li>
-<li><strong>Hari Krismas</strong> - 25 Disember 2019 (Rabu)</li>
-	</ul>
-		</div>
+          <div class="alert alert-info" role="alert"><em>
+              <h4><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>
+            </em>Cuti Umum</h4>
+            <ul class="text-default">
+              <li><strong>Hari Keputeraan Seri Paduka Baginda
+                  Yang Dipertuan Agong</strong> - 27 Julai 2019 (Sabtu)</li>
+              <li><strong>Hari Raya Aidil Adha</strong> - 11 Ogos 2019 (Ahad)</li>
+              <li><strong>Hari Kebangsaan</strong> - 31 Ogos 2019 (Sabtu)</li>
+              <li><strong>Awal Muharam</strong> - 1 September 2019 (Ahad)</li>
+              <li><strong>Hari Malaysia</strong> - 16 September 2019 (Isnin)</li>
+              <li><strong>Deepavali</strong> - 27 Oktober 2019 (Ahad)</li>
+              <li><strong>Maulidur Rasul</strong> - 9 November 2019 (Sabtu)</li>
+              <li><strong>Hari Krismas</strong> - 25 Disember 2019 (Rabu)</li>
+            </ul>
+          </div>
+          <!-- END TAB Content -->
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <!-- TAB Content -->
+          <h1>Takwim Akademik Politeknik Sesi Jun 2019 (Ijazah)</h1>
+          <!-- Alert Box -->
+          <div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>To Be Added.</em></div>
+          <!-- Alert Box ENDS -->
+          <!-- Tags -->
+          <div class="tags">
+            <span class="tag">Kemaskini</span>
+            <span class="tag">1 Jun 2019</span>
+          </div>
+          <!-- END Tags -->
+          <!-- box title ends -->
+
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">Tarikh</th>
+                <th scope="col">Bil. Minggu</th>
+                <th scope="col">Aktiviti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-warning text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-danger  text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+          </table>
+
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th colspan="3">TBA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>TBA</td>
+              </tr>
+              <thead class="thead-dark text-center">
+                <tr>
+                  <th colspan="3">TBA</th>
+                </tr>
+              </thead>
+              <tr class="table-danger text-dark text-center">
+                <td>TBA</td>
+              </tr>
+          </table>
+
+          <div class="alert alert-info" role="alert"><em>
+              <h4><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>
+            </em>Cuti Umum</h4>
+            <ul class="text-default">
+              <li><strong>Hari Keputeraan Seri Paduka Baginda
+                  Yang Dipertuan Agong</strong> - 27 Julai 2019 (Sabtu)</li>
+              <li><strong>Hari Raya Aidil Adha</strong> - 11 Ogos 2019 (Ahad)</li>
+              <li><strong>Hari Kebangsaan</strong> - 31 Ogos 2019 (Sabtu)</li>
+              <li><strong>Awal Muharam</strong> - 1 September 2019 (Ahad)</li>
+              <li><strong>Hari Malaysia</strong> - 16 September 2019 (Isnin)</li>
+              <li><strong>Deepavali</strong> - 27 Oktober 2019 (Ahad)</li>
+              <li><strong>Maulidur Rasul</strong> - 9 November 2019 (Sabtu)</li>
+              <li><strong>Hari Krismas</strong> - 25 Disember 2019 (Rabu)</li>
+            </ul>
+          </div>
+          <!-- END TAB Content -->
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <!-- TAB Content -->
+          <h1>TBA TITLE</h1>
+          <!-- Alert Box -->
+          <div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>To Be Added.</em></div>
+          <!-- Alert Box ENDS -->
+          <!-- Tags -->
+          <div class="tags">
+            <span class="tag">Kemaskini</span>
+            <span class="tag">1 Jun 2019</span>
+          </div>
+          <!-- END Tags -->
+          <!-- box title ends -->
+
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">Tarikh</th>
+                <th scope="col">Bil. Minggu</th>
+                <th scope="col">Aktiviti</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-primary text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-warning text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-danger  text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+              <tr class="table-success text-dark text-center">
+                <td>TBA</td>
+                <td>TBA</td>
+                <td>TBA</td>
+              </tr>
+          </table>
+
+          <table class="table table-borderless font-weight-bold">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th colspan="3">TBA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info text-dark text-center">
+                <td>TBA</td>
+              </tr>
+              <thead class="thead-dark text-center">
+                <tr>
+                  <th colspan="3">TBA</th>
+                </tr>
+              </thead>
+              <tr class="table-danger text-dark text-center">
+                <td>TBA</td>
+              </tr>
+          </table>
+
+          <div class="alert alert-info" role="alert"><em>
+              <h4><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>
+            </em>Cuti Umum</h4>
+            <ul class="text-default">
+              <li><strong>Hari Keputeraan Seri Paduka Baginda
+                  Yang Dipertuan Agong</strong> - 27 Julai 2019 (Sabtu)</li>
+              <li><strong>Hari Raya Aidil Adha</strong> - 11 Ogos 2019 (Ahad)</li>
+              <li><strong>Hari Kebangsaan</strong> - 31 Ogos 2019 (Sabtu)</li>
+              <li><strong>Awal Muharam</strong> - 1 September 2019 (Ahad)</li>
+              <li><strong>Hari Malaysia</strong> - 16 September 2019 (Isnin)</li>
+              <li><strong>Deepavali</strong> - 27 Oktober 2019 (Ahad)</li>
+              <li><strong>Maulidur Rasul</strong> - 9 November 2019 (Sabtu)</li>
+              <li><strong>Hari Krismas</strong> - 25 Disember 2019 (Rabu)</li>
+            </ul>
+          </div>
+          <!-- END TAB Content -->
+        </div>
+      </div>
+      <!-- END TABS -->
 
 
-	</section>
-	<!-- E N D  BOXS -->
-	<!--  FOOTER  -->
-	<footer>
-		<div class="container">
-			TWTPSA <Span id="year"></span> &copy; All rights reserved.
-		</div>
-	</footer>
-	<!--  E N D  FOOTERR  -->
+  </section>
+  <!-- E N D  BOXS -->
+  <!--  FOOTER  -->
+  <footer>
+    <div class="container">
+      TWTPSA <Span id="year"></span> &copy; All rights reserved.
+    </div>
+  </footer>
+  <!--  E N D  FOOTERR  -->
 
-	<!-- JS SCRIPTS -->
-	<!-- Core -->
-	<script src="./assets/vendor/jquery/jquery.min.js"></script>
-	<script src="./assets/vendor/popper/popper.min.js"></script>
-	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="./assets/vendor/headroom/headroom.min.js"></script>
+  <!-- JS SCRIPTS -->
+  <!-- Core -->
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <script src="./assets/vendor/popper/popper.min.js"></script>
+  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/vendor/headroom/headroom.min.js"></script>
   <script src="./assets/js/modified-anchor.js"></script>
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.1"></script>
@@ -219,16 +446,21 @@ Yang Dipertuan Agong</strong> - 27 Julai 2019 (Sabtu)</li>
     anchors.add('');
   </script>
   <script>
-  function copy_click(clicked_id){
-  var inp =document.createElement('input');
-  document.body.appendChild(inp)
-  inp.value = 'https://tweetpsa.github.io/takwim' + '#' + clicked_id
-  inp.select();
-  document.execCommand('copy',false);
-  inp.remove();
-  }
+    function copy_click(clicked_id) {
+      var inp = document.createElement('input');
+      document.body.appendChild(inp)
+      inp.value = 'https://tweetpsa.github.io/takwim' + '#' + clicked_id
+      inp.select();
+      document.execCommand('copy', false);
+      inp.remove();
+    }
   </script>
-	<!-- JS SCRIPTS ENDS-->
+  <!-- JS SCRIPTS ENDS-->
 </body>
+
+
+<!--
+
+-->
 
 </html>

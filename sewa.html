@@ -27,73 +27,84 @@
 
 <body>
   <!-- NAVBAR -->
-<header class="header-global">
-  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
-    <div class="container">
-      <a class="navbar-brand mr-lg-5" href="./index.html">
-        <img src="./assets/img/brand/logo-white.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar_global">
-        <div class="navbar-collapse-header">
-          <div class="row">
-            <div class="col-6 collapse-brand">
-              <a href="./index.html">
-                <img src="./assets/img/brand/logo-blue.png">
-              </a>
-            </div>
-            <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-              </button>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5" href="./index.html">
+          <img src="./assets/img/brand/logo-white.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="./index.html">
+                  <img src="./assets/img/brand/logo-blue.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
             </div>
           </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="fas fa-file"></i>
+                <span class="nav-link-inner--text">Panduan</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="./junior" class="dropdown-item"><i class="fas fa-baby"></i>Panduan Daftar Junior</a>
+                <a href="./senior" class="dropdown-item"><i class="fas fa-child"></i>Panduan Daftar Senior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="./takwim" class="nav-link" role="button">
+                <i class="far fa-calendar-alt"></i>
+                <span class="nav-link-inner--text">Takwim</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./sewa" class="nav-link" role="button">
+                <i class="fas fa-home"></i>
+                <span class="nav-link-inner--text">Rumah Sewa</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="fas fa-arrow-down"></i>
+                <span class="nav-link-inner--text">Lain-lain</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="./program" class="dropdown-item"><i class="fas fa-file-alt"></i>Senarai Program</a>
+                <a href="./ambilan" class="dropdown-item"><i class="fas fa-calendar-check"></i>Pengambilan Pelajar Baru</a>
+                <a href="./lain" class="dropdown-item"><i class="fas fa-link"></i>Pautan Lain</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
+                <i class="fab fa-telegram-plane"></i>
+                <span class="nav-link-inner--text d-lg-none">Telegram</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-              <i class="fas fa-file"></i>
-              <span class="nav-link-inner--text">Panduan</span>
-            </a>
-            <div class="dropdown-menu">
-              <a href="./junior" class="dropdown-item"><i class="far fa-user"></i>Panduan Daftar Junior</a>
-              <a href="./senior" class="dropdown-item"><i class="fas fa-user"></i>Panduan Daftar Senior</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="./takwim" class="nav-link" role="button">
-              <i class="far fa-calendar-alt"></i>
-              <span class="nav-link-inner--text">Takwim Diploma Jun 2019</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="./sewa" class="nav-link" role="button">
-              <i class="fas fa-map-marked-alt"></i>
-              <span class="nav-link-inner--text">Jarak Rumah Sewa</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
-              <i class="fa fa-twitter"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
-              <i class="fab fa-telegram-plane"></i>
-              <span class="nav-link-inner--text d-lg-none">Telegram</span>
-            </a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
-</header> <!-- END NAVBAR -->
+    </nav>
+  </header> <!-- END NAVBAR -->
 
 		<section id="background">
 		<div class="container">
