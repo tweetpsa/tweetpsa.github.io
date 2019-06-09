@@ -144,6 +144,7 @@
     }
     kbd {
       font-family: 'Open Sans', sans-serif;
+      letter-spacing: 0.08rem;
     }
 @media only screen and (max-width: 600px) {
   html {
