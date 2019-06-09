@@ -142,7 +142,10 @@
       background-color: #1b95e0;
       border: 1px solid #1b95e0;
     }
+    kbd {
+      font-family: 'Open Sans', sans-serif;
+    }
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
