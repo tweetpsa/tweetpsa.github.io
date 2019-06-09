@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
   body {
-  color: #3a3f52;
+  color: #212529;
   background-color: #f6f8f9;
   }
   .bg-light {
@@ -75,7 +75,7 @@
   }
   .btn-android {
     color: #fff;
-    background-color: #689f38;
+    background-color: #a4c639;
   }
   .btn-android:hover {
     color: #fff;
@@ -83,11 +83,11 @@
   }
   .btn-apple {
     color: #fff;
-    background-color: #000;
+    background-color: #007aff;
   }
   .btn-apple:hover {
     color: #fff;
-    background-color: #323232;
+    background-color: #0a84ff;
   }
   .spacer {
     margin-top: 10px;
