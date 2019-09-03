@@ -17,6 +17,7 @@
   body {
   color: #212529;
   background-color: #f6f8f9;
+  font-family: 'LexendDeca-Regular', 'Open Sans', Arial, sans-serif; }
   }
   .bg-light {
   background-color: #f8f9fa!important; /* Overwrite CSS, there's two of them in Argon CSS btw */
@@ -149,4 +150,8 @@
 @media only screen and (max-width: 600px) {
   html {
     font-size: 0.9rem;
+}
+@font-face{
+	font-family: 'LexendDeca-Regular';
+	src: url('\assets\font\LexendDeca-Regular.ttf');
 }
