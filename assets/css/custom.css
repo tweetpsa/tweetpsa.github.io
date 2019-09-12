@@ -16,14 +16,14 @@
 */
   body {
   color: #212529;
-  background-color: #f6f8f9;
+  background-color: #f3f3f3; /* #f6f8f9; old */
   font-family: 'LexendDeca-Regular', 'Open Sans', Arial, sans-serif; }
   }
   .bg-light {
-  background-color: #f8f9fa!important; /* Overwrite CSS, there's two of them in Argon CSS btw */
+  background-color: none!important; /* Overwrite CSS, there's two of them in Argon CSS btw */
   }
   .bg-light {
-    border-left: solid 2px #dedede;
+    border-left: solid 5px #f3f3f3 ;
   }
   section {
     padding: 50px 0px;
