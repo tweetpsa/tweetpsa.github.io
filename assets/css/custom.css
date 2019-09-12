@@ -20,7 +20,7 @@
   font-family: 'LexendDeca-Regular', 'Open Sans', Arial, sans-serif; }
   }
   .bg-light {
-  background-color: none!important; /* Overwrite CSS, there's two of them in Argon CSS btw */
+    background-color: none; /* Overwrite CSS, there's two of them in Argon CSS btw */
   }
   .bg-light {
     border-left: solid 5px #f3f3f3 ;
