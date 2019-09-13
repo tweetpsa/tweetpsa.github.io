@@ -19,9 +19,10 @@
   <style>
     body {
       background-image: url('https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center;
+      min-height : 100%;
+  min-width : 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
     }
   </style>
   <!-- PAGE TITLE -->
@@ -111,27 +112,98 @@
     </nav>
   </header> <!-- END NAVBAR -->
   <!-- Page Content -->
-  <section id="background">
-    <div class="container text-center">
-      <h1 class="mt-5"><span style="color:#f06595;"><i class="fas fa-heart"></i></span>TWTPSA</h1>
-      <h5>Menyediakan panduan dan maklumat berkaitan dengan Politeknik Premier Sultan Salahuddin Abdul Aziz Shah.</h5>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"><a href="/junior" class="btn btn-info btn-md btn-block m-1 text-dark" role="button">Panduan Daftar Junior</a></div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"><a href="/senior" class="btn btn-info btn-md btn-block m-1 text-dark" role="button">Panduan Daftar Senior</a></div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"><a href="/takwim" class="btn btn-info btn-md btn-block m-1 text-dark" role="button">Takwim Diploma Jun 2019</a></div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12"><a href="/sewa" class="btn btn-info btn-md btn-block m-1 text-dark" role="button">Jarak Rumah Sewa</a></div>
-      </div>
-    </div>
-    <!-- XX -->
-  </section>
-  <!--  FOOTER -->
-  <footer>
+  <section class="cards-section text-center">
     <div class="container">
-      <Span id="year"></span> &copy; All rights reserved. </div>
-  </footer>
-  <!--  FOOTER ENDS  -->
+      <div id="cards-wrapper" class="cards-wrapper row">
+        <div class="item item-green col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <i class="icon fas fa-baby"></i>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Panduan Daftar Junior</h3>
+            <p class="intro">Panduan pendaftaran bagi pelajar baharu.</p>
+            <a class="link" href="/junior"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item item-pink item-2 col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <span aria-hidden="true" class="icon fas fa-child"></span>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Panduan daftar Senior</h3>
+            <p class="intro">Panduan pendaftaran bagi pelajar senior.</p>
+            <a class="link" href="/senior"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item item-blue col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <span aria-hidden="true" class="icon far fa-calendar-alt"></span>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Takwim Akademik</h3>
+            <p class="intro">Senarai takwim akademik pelajar.</p>
+            <a class="link" href="/takwim"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item item-purple col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <span aria-hidden="true" class="icon fas fa-home"></span>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Rumah Sewa</h3>
+            <p class="intro">Jarak rumah sewa berdekatan dengan PSA.</p>
+            <a class="link" href="/sewa"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item item-primary col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <span aria-hidden="true" class="icon fas fa-file-alt"></span>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Senarai Program</h3>
+            <p class="intro">Senarai program pengajian yang ditawarkan di PSA.</p>
+            <a class="link" href="/program"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item item-orange col-lg-4 col-6">
+          <div class="item-inner">
+            <div class="icon-holder">
+              <span aria-hidden="true" class="icon fas fa-calendar-check"></span>
+            </div>
+            <!--//icon-holder-->
+            <h3 class="title">Pengambilan Pelajar Baharu</h3>
+            <p class="intro">Tarikh sesi permohonan pengambilan pelajar baharu.</p>
+            <a class="link" href="/ambilan"><span></span></a>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+      </div>
+      <!--//cards-->
+
+    </div>
+    <!--//container--><div class="footer fixed-bottom">
+        <Span id="year"></span> &copy; All rights reserved.
+    <!--  FOOTER ENDS  --></div>
+  </section>
+  <!--//cards-section-->
+  <!-- content end -->
+
   <!-- JS SCRIPTS -->
   <!-- Core -->
   <script src="./assets/vendor/jquery/jquery.min.js"></script>
