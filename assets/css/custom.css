@@ -169,8 +169,8 @@ kbd {
 }
 
 .quote {
-  background-color: none;
-  border-left: 5px solid #f3f3f3;
+  background-color: #f3f3f3;
+  border-left: 5px solid #e3e3e3;
 }
 
 @media only screen and (max-width: 600px) {
