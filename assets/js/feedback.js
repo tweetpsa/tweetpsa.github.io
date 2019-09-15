@@ -8,7 +8,7 @@
 * Licensed under MIT
 */
 
-function myFeedabck() {
+function myFeedback() {
   var x = document.getElementById("myText").value;
   window.open('https://twitter.com/messages/compose?recipient_id=2206778071&text=' + x , "_blank");
 }
