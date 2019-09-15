@@ -13,18 +13,12 @@
   <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+  <!-- AnchorJS CSS -->
+  <link type="text/css" href="./assets/css/anchor.css" rel="stylesheet">
+  <!-- END AnchorJS CSS -->
   <!-- CUSTOM CSS -->
   <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
   <!-- CUSTOM CSS ENDS -->
-  <style>
-    body {
-      background-image: url('https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');
-      min-height : 100%;
-  min-width : 100%;
-  background-size:100% 100%;
-  background-repeat:no-repeat;
-    }
-  </style>
   <!-- PAGE TITLE -->
   <title>TWTPSA</title>
   <!-- PAGE TITLE ENDS -->
@@ -112,74 +106,53 @@
       </div>
     </nav>
   </header> <!-- END NAVBAR -->
-  <!-- Page Content -->
-  <section class="cards-section text-center">
-    <div class="container">
-      <div id="cards-wrapper" class="cards-wrapper row">
-        <div class="item item-blue col-lg-4">
-          <div class="item-inner">
-            <div class="icon-holder">
-              <i class="icon fab fa-twitter"></i>
-            </div>
-            <!--//icon-holder-->
-            <h3 class="title">Follow us on Twitter!</h3>
-            <p class="intro">https://twitter.com/twtpsa</p>
-            <a class="link" href="https://twitter.com/twtpsa"><span></span></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-        <div class="item item-pink item-2 col-lg-4">
-          <div class="item-inner">
-            <div class="icon-holder">
-              <span aria-hidden="true" class="icon fab fa-telegram-plane"></span>
-            </div>
-            <!--//icon-holder-->
-            <h3 class="title">Join our Telegram group!</h3>
-            <p class="intro">https://t.me/polishahalam</p>
-            <a class="link" href="https://t.me/polishahalam"><span></span></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-        <div class="item item-blue col-lg-4">
-          <div class="item-inner">
-            <div class="icon-holder">
-              <span aria-hidden="true" class="icon fab fa-telegram-plane"></span>
-            </div>
-            <!--//icon-holder-->
-            <h3 class="title">Follow our Telegram channel!</h3>
-            <p class="intro">https://t.me/s/twtpsa</p>
-            <a class="link" href="https://t.me/s/twtpsa"><span></span></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-      </div>
-      <!--//cards-->
 
+		<section id="background">
+		<div class="container">
+<!-- Page Content -->
+<h1>Feedback</h1>
+<div class="row p-1">
+<div class="col-md-9">
+  <div class="form-group">
+    <input type="text" class="form-control form-control-alternative" id="myText" value="Your Feedback Here ">
+  </div>
+</div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <button class="tweet form-control form-control-alternative" onclick="myFeedback()"><i class="fab fa-twitter"></i> Tweet</button>
     </div>
-    <!--//footer
-    <div class="footer fixed-bottom">
-        <Span id="year"></span> &copy; All rights reserved.
-    </div>  -->
-  </section>
-  <!--//cards-section-->
-  <!-- content end -->
+  </div>
+</div>
+</div>  <!-- Container Ends -->
+</section>
 
-  <!-- JS SCRIPTS -->
-  <!-- Core -->
-  <script src="./assets/vendor/jquery/jquery.min.js"></script>
-  <script src="./assets/vendor/popper/popper.min.js"></script>
-  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="./assets/vendor/headroom/headroom.min.js"></script>
+
+	<!--  FOOTER  -->
+	<footer>
+		<div class="container">
+			TWTPSA <Span id="year"></span> &copy; All rights reserved.
+		</div>
+
+	</footer>
+	<!--  E N D  FOOTERR  -->
+	<!-- JS SCRIPTS -->
+	<!-- Core -->
+	<script src="./assets/vendor/jquery/jquery.min.js"></script>
+	<script src="./assets/vendor/popper/popper.min.js"></script>
+	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="./assets/vendor/headroom/headroom.min.js"></script>
+  <script src="./assets/js/modified-anchor.js"></script>
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.1"></script>
+  <!-- Editable precomposed tweet button -->
+  <script src="./assets/js/feedback.js"></script>
+  <!-- Embeded Scripts -->
   <script>
     var d = new Date();
     document.getElementById("year").innerHTML = d.getFullYear();
   </script>
-  <!-- JS SCRIPTS ENDS-->
-</body> <!-- Body ENDS -->
+
+	<!-- JS SCRIPTS ENDS-->
+</body>
 
 </html>
