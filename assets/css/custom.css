@@ -346,6 +346,30 @@ kbd {
   color: #8A40A7;
 }
 
+.cards-section .item-twitter .item-inner {
+  border-top: 3px solid #1da1f2;
+}
+
+.cards-section .item-twitter .item-inner:hover .title {
+  color: #1da1f2;
+}
+
+.cards-section .item-twitter .icon {
+  color: #1da1f2;
+}
+
+.cards-section .item-telegram .item-inner {
+  border-top: 3px solid #1da1f2;
+}
+
+.cards-section .item-telegram .item-inner:hover .title {
+  color: #1da1f2;
+}
+
+.cards-section .item-telegram .icon {
+  color: #1da1f2;
+}
+
 .footer {
   background-color: #172b4d;
   padding: 0rem;
