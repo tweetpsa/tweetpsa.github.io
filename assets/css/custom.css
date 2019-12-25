@@ -47,6 +47,11 @@ i {
   /* Adding space after Font Awesome icons  */
 }
 
+a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .nav-link i:not(.fa) {
   position: relative;
   top: 0px;
@@ -66,6 +71,11 @@ i {
 
 .external-links {
   color: #0095f7;
+}
+
+.btn {
+  text-decoration: none;
+  font-style: normal;
 }
 
 .btn-telegram {
