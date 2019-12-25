@@ -42,17 +42,12 @@ section {
   margin-top: 30px;
 }
 
-.navbar-nav {
-  text-decoration: none;
-  font-style: normal;
-}
-
 i {
   margin-right: 5px;
   /* Adding space after Font Awesome icons  */
 }
 
-body a {
+.box a {
   font-style: italic;
   text-decoration: underline;
 }
@@ -78,9 +73,14 @@ body a {
   color: #0095f7;
 }
 
-.btn {
-  text-decoration: none;
-  font-style: normal;
+.anchorjs-link {
+  text-decoration: none!important;
+  font-style: normal!important;
+}
+
+.btn{
+  text-decoration: none!important;
+  font-style: normal!important;
 }
 
 .btn-telegram {
