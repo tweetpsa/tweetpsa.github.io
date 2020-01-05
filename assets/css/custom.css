@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* CUSTOM CSS FOR ARGON
+* CUSTOM CSS FOR BOOTSTRAP
 =========================================================
 
 * Product Page: https://tweetpsa.github.io/
@@ -16,6 +16,7 @@
 */
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,99 +26,20 @@ body {
   font-family: 'LexendDeca-Regular', 'Open Sans', Arial, sans-serif;
 }
 
-section {
-  padding: 50px 0px;
+.hero {
+  background: url('https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');
+  background-position: center;
 }
 
-#background {
-  margin-top: 50px;
-  min-height: 100vh;
+.navbar-brand img {
+  width: auto;
+  height: 40px;
 }
 
-.box {
-  background-color: #ffffff;
-  box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.04), 0 10px 16px 0 rgba(10, 31, 68, 0.06);
-  border-radius: 5px;
-  padding: 20px 30px;
-  margin-top: 30px;
-}
-
-i {
-  margin-right: 5px;
-  /* Adding space after Font Awesome icons  */
-}
-
-.box a {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.nav-link i:not(.fa) {
-  position: relative;
-  top: 0px;
-}
-
-.dropdown-menu .dropdown-item>i, .dropdown-menu .dropdown-item>svg {
-  vertical-align: 0px;
-}
-
-.figure-caption
-
-/* Original value too light */
-  {
-  font-size: 90%;
-  color: #212529;
-}
-
-.external-links {
-  color: #0095f7;
-}
-
-.anchorjs-link {
-  text-decoration: none!important;
-  font-style: normal!important;
-}
-
-.btn{
-  text-decoration: none!important;
-  font-style: normal!important;
-}
-
-.btn-telegram {
-  /* Custom Color Button */
-  color: #FFFFFF;
-  background-color: #0088cc;
-}
-
-.btn-telegram:hover {
-  color: #fff;
-  background-color: #0296e0;
-  border-color: #0088cc;
-}
-
-.btn-android {
-  color: #fff;
-  background-color: #a4c639;
-}
-
-.btn-android:hover {
-  color: #fff;
-  background-color: #8bc34a;
-}
-
-.btn-apple {
-  color: #fff;
-  background-color: #007aff;
-}
-
-.btn-apple:hover {
-  color: #fff;
-  background-color: #0a84ff;
-}
-
-.spacer {
-  margin-top: 10px;
-  /* define margin as you see fit */
+/* Quote CSS */
+.quote {
+  background-color: #f3f3f3;
+  border-left: 5px solid #bdbdbd;
 }
 
 /* Tags CSS */
@@ -154,6 +76,236 @@ i {
   color: #fff;
 }
 
+/* tag end */
+/* box */
+.box {
+  background-color: #fbfbfb;
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.04), 0 10px 16px 0 rgba(10, 31, 68, 0.06);
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+/* box ends */
+/* Hero CSS */
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.hero {
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero .container-fluid {
+  z-index: 10;
+}
+
+/* End Hero Css */
+.section2 figure {
+  margin-bottom: 30px;
+}
+
+.section2 figcaption {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section2 img {
+  filter: grayscale(100%) blur(3px);
+  transition: transform 0.5s, filter 0.75s;
+}
+
+.section2 a:hover img {
+  transform: scale(1.25);
+  filter: none;
+}
+
+/* Map CSS */
+.map-custom-popup .leaflet-popup-content-wrapper {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 0;
+  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.map-custom-popup .leaflet-popup-content {
+  margin: 0;
+  background: #fff;
+}
+
+.map-custom-popup .leaflet-popup-tip {
+  background: #fff;
+}
+
+.map-custom-popup a.leaflet-popup-close-button {
+  display: inline-block;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff !important;
+  background: #343a40 !important;
+  font-weight: bold;
+  line-height: 30px !important;
+}
+
+.map-custom-popup .leaflet-popup-content p {
+  margin: 0 0 1rem;
+}
+
+.map-custom-popup .leaflet-popup-content a {
+  color: #333;
+}
+
+/* End Map CSS */
+/*smooth scroll */
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+img,
+figure {
+  max-width: 100%;
+}
+
+/* End Smooth Scroll */
+/* Cards */
+.item {
+  margin-bottom: 30px;
+}
+
+.item .icon {
+  font-size: 36px;
+}
+
+.item-twitter .icon {
+  color: #0084b4;
+}
+
+.item-twitter .item-inner {
+  border-top: 3px solid #0084b4;
+}
+
+.item-telegram .icon {
+  color: #354f62;
+}
+
+.item-telegram .item-inner {
+  border-top: 3px solid #354f62;
+}
+
+.item-sewa .icon {
+  color: #892A4C;
+}
+
+.item-sewa .item-inner {
+  border-top: 3px solid #892A4C;
+}
+
+.item-junior .icon {
+  color: #a2cd41;
+}
+
+.item-junior .item-inner {
+  border-top: 3px solid #a2cd41;
+}
+
+.item-senior .icon {
+  color: #e9a835;
+}
+
+.item-senior .item-inner {
+  border-top: 3px solid #e9a835;
+}
+
+.item-takwim .icon {
+  color: #de4947;
+}
+
+.item-takwim .item-inner {
+  border-top: 3px solid #de4947;
+}
+
+.item-inner {
+  padding: 45px 30px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  height: 100%;
+}
+
+.item .icon-holder {
+  margin-bottom: 15px;
+}
+
+.item .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item .intro {
+  margin-bottom: 15px;
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 60px;
+  color: #616670;
+}
+
+.item-inner .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url(../images/empty.gif);
+}
+/* Cards Ends */
+
+/* TWEET BUTTON */
+
 .tweet {
   background-color: #1da1f2;
   border: 1px solid #1da1f2;
@@ -174,219 +326,4 @@ i {
   color: #fff !important;
   background-color: #1b95e0;
   border: 1px solid #1b95e0;
-}
-
-kbd {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.08rem;
-}
-
-.quote {
-  background-color: #f3f3f3;
-  border-left: 5px solid #e3e3e3;
-}
-
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 0.9rem;
-  }
-
-  @font-face {
-    font-family: 'LexendDeca-Regular';
-    src: url('\assets\font\LexendDeca-Regular.ttf');
-  }
-}
-
-/* HOMEPAGE */
-.cards-section {
-  height: 100vh;
-  overflow: auto;
-  padding: 100px 0 0 0;
-  background: none;
-}
-
-.cards-section .title {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.cards-section .intro {
-  margin: 0 auto;
-  max-width: 800px;
-  margin-bottom: 60px;
-  color: #616670;
-}
-
-.cards-section .cards-wrapper {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cards-section .item {
-  margin-bottom: 30px;
-}
-
-.cards-section .item .icon-holder {
-  margin-bottom: 15px;
-}
-
-.cards-section .item .icon {
-  font-size: 36px;
-}
-
-.cards-section .item .title {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.cards-section .item .intro {
-  margin-bottom: 15px;
-}
-
-.cards-section .item-inner {
-  padding: 45px 30px;
-  background: #fff;
-  position: relative;
-  border: 1px solid #f0f0f0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  height: 100%;
-}
-
-.cards-section .item-inner .link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-image: url("../images/empty.gif");
-  /* for IE8 */
-}
-
-.cards-section .item-inner:hover {
-  background: #f5f5f5;
-}
-
-.cards-section .item-primary .item-inner {
-  border-top: 3px solid #40babd;
-}
-
-.cards-section .item-primary .item-inner:hover .title {
-  color: #2d8284;
-}
-
-.cards-section .item-primary .icon {
-  color: #40babd;
-}
-
-.cards-section .item-green .item-inner {
-  border-top: 3px solid #75c181;
-}
-
-.cards-section .item-green .item-inner:hover .title {
-  color: #48a156;
-}
-
-.cards-section .item-green .icon {
-  color: #75c181;
-}
-
-.cards-section .item-blue .item-inner {
-  border-top: 3px solid #58bbee;
-}
-
-.cards-section .item-blue .item-inner:hover .title {
-  color: #179de2;
-}
-
-.cards-section .item-blue .icon {
-  color: #58bbee;
-}
-
-.cards-section .item-orange .item-inner {
-  border-top: 3px solid #F88C30;
-}
-
-.cards-section .item-orange .item-inner:hover .title {
-  color: #d46607;
-}
-
-.cards-section .item-orange .icon {
-  color: #F88C30;
-}
-
-.cards-section .item-red .item-inner {
-  border-top: 3px solid #f77b6b;
-}
-
-.cards-section .item-red .item-inner:hover .title {
-  color: #f33a22;
-}
-
-.cards-section .item-red .icon {
-  color: #f77b6b;
-}
-
-.cards-section .item-pink .item-inner {
-  border-top: 3px solid #EA5395;
-}
-
-.cards-section .item-pink .item-inner:hover .title {
-  color: #d61a6c;
-}
-
-.cards-section .item-pink .icon {
-  color: #EA5395;
-}
-
-.cards-section .item-purple .item-inner {
-  border-top: 3px solid #8A40A7;
-}
-
-.cards-section .item-purple .item-inner:hover .title {
-  color: #5c2b70;
-}
-
-.cards-section .item-purple .icon {
-  color: #8A40A7;
-}
-
-.cards-section .item-twitter .item-inner {
-  border-top: 3px solid #1da1f2;
-}
-
-.cards-section .item-twitter .item-inner:hover .title {
-  color: #1da1f2;
-}
-
-.cards-section .item-twitter .icon {
-  color: #1da1f2;
-}
-
-.cards-section .item-telegram .item-inner {
-  border-top: 3px solid #1da1f2;
-}
-
-.cards-section .item-telegram .item-inner:hover .title {
-  color: #1da1f2;
-}
-
-.cards-section .item-telegram .icon {
-  color: #1da1f2;
-}
-
-.footer {
-  background-color: #172b4d;
-  padding: 0rem;
-  color: #f3f3f3;
 }

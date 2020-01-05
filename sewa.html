@@ -10,12 +10,8 @@
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Icons -->
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
-  <!-- AnchorJS CSS -->
-  <link type="text/css" href="./assets/css/anchor.css" rel="stylesheet">
-  <!-- END AnchorJS CSS -->
+  <link type="text/css" href="./assets/css/bootstrap.css" rel="stylesheet">
   <!-- CUSTOM CSS -->
   <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
   <!-- CUSTOM CSS ENDS -->
@@ -28,227 +24,178 @@
 <body>
   <!-- NAVBAR -->
   <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="./index.html">
-          <img src="./assets/img/brand/logo-white.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="./index.html">
-                  <img src="./assets/img/brand/logo-blue.png">
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand " href="#"><img class="d-none d-lg-block" src="./assets/img/brand/logo-blue.png"></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Panduan
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/junior">Panduan Daftar Junior</a>
+              <a class="dropdown-item" href="/senior">Panduan Daftar Senior</a>
             </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-file"></i>
-                <span class="nav-link-inner--text">Panduan</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./junior" class="dropdown-item"><i class="fas fa-baby"></i>Panduan Daftar Junior</a>
-                <a href="./senior" class="dropdown-item"><i class="fas fa-child"></i>Panduan Daftar Senior</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="./takwim" class="nav-link" role="button">
-                <i class="far fa-calendar-alt"></i>
-                <span class="nav-link-inner--text">Takwim</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./sewa" class="nav-link" role="button">
-                <i class="fas fa-home"></i>
-                <span class="nav-link-inner--text">Rumah Sewa</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-arrow-down"></i>
-                <span class="nav-link-inner--text">Lain-lain</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./program" class="dropdown-item"><i class="fas fa-file-alt"></i>Senarai Program</a>
-                <a href="./ambilan" class="dropdown-item"><i class="fas fa-calendar-check"></i>Pengambilan Pelajar Baru</a>
-                <a href="./lain" class="dropdown-item"><i class="fas fa-link"></i>Pautan Lain</a>
-                <a href="./feedback" class="dropdown-item"><i class="fas fa-heart"></i>Feedback</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
-                <i class="fa fa-twitter"></i>
-                <span class="nav-link-inner--text d-lg-none">Twitter</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
-                <i class="fab fa-telegram-plane"></i>
-                <span class="nav-link-inner--text d-lg-none">Telegram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/takwim">Takwim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sewa">Rumah Sewa</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter!">
+              <i class="fab fa-twitter"> Twitter</i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Telegram!">
+              <i class="fab fa-telegram-plane"> Telegram</i>
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header> <!-- END NAVBAR -->
-
-		<section id="background">
-		<div class="container">
-				<h1>Jarak Rumah Sewa</h1>
-        <!-- Alert Box -->
-  			<div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>Jarak yang dipaparkan adalah ke pintu masuk utama PSA.</em></div>
-  			<!-- Alert Box ENDS -->
-        <!-- Tags -->
-          <div class="tags">
-              <span class="tag">Kemaskini</span>
-              <span class="tag">1 Jun 2019</span>
+  <section id="background">
+    <div class="container p-5">
+      <h1>Jarak Rumah Sewa</h1>
+      <!-- Alert Box -->
+      <div class="alert alert-primary" role="alert"><em><i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>Jarak yang dipaparkan adalah ke pintu masuk utama PSA.</em></div>
+      <!-- Alert Box ENDS -->
+      <!-- Tags -->
+      <div class="tags">
+        <span class="tag">Kemaskini</span>
+        <span class="tag">1 Jun 2019</span>
+      </div>
+      <!-- END Tags -->
+      <!-- Page Content -->
+      <p class="text-center font-italic"><small>Mencari rumah sewa? Ubah teks dibawah mengikut kesesuaian dan klik tweet!</small></p>
+      <div class="row p-1">
+        <div class="col-md-9">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-alternative" id="myText" value="Hello @twtpsa saya sedang mencari rumah sewa. Mohon RT!">
           </div>
-        <!-- END Tags -->
-<!-- Page Content -->
-<p class="text-center font-italic"><small>Mencari rumah sewa? Ubah teks dibawah mengikut kesesuaian dan klik tweet!</small></p>
-<div class="row p-1">
-<div class="col-md-9">
-  <div class="form-group">
-    <input type="text" class="form-control form-control-alternative" id="myText" value="Hello @twtpsa saya sedang mencari rumah sewa. Mohon RT!">
-  </div>
-</div>
-  <div class="col-md-3">
-    <div class="form-group">
-      <button class="tweet form-control form-control-alternative" onclick="myTweet()"><i class="fab fa-twitter"></i> Tweet</button>
-    </div>
-  </div>
-</div>
-  <div class="row">
-    <!-- Team Member 1 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d15936.02022928917!2d101.54540192652702!3d3.093312540472996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d3.1008022!2d101.5514937!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526289148!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">Apartment Ilham</h5>
-            <div class="card-text text-black-50"><i class="fas fa-walking"></i> 26 Minit</div><div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 5/6 Minit</i></div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <button class="tweet form-control form-control-alternative" onclick="myTweet()"><i class="fab fa-twitter"></i> Tweet</button>
           </div>
-      </div>
-    </div>
-     <!-- Team Member 1 Ends -->
-    <!-- Team Member 2 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7968.016289481112!2d101.55143647407996!3d3.0924908042308936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x31cc4dc5ce110b91%3A0x29c29ee37e314f1!2sPangsapuri%20Jaya!3m2!1d3.099618!2d101.5560529!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526398820!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-       <div class="card-body text-center">
-          <h5 class="card-title mb-0">Apartment Jaya</h5>
-          <div class="card-text text-black-50"><i class="fas fa-walking"></i> 22 Minit</div><div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 4/5 Minit</div>
         </div>
       </div>
-    </div>
-     <!-- Team Member 2 Ends -->
-    <!-- Team Member 3 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7968.033817598236!2d101.55056157392997!3d3.0901570042616213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.0949736!2d101.5565615!4m3!3m2!1d3.0855663!2d101.55465919999999!5e0!3m2!1sen!2smy!4v1559293745387!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Apartment Melewar</h5>
-          <div class="card-text text-black-50"><i class="fas fa-walking"></i> 16 Minit</div><div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 4 Minit</div>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d15936.02022928917!2d101.54540192652702!3d3.093312540472996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d3.1008022!2d101.5514937!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526289148!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Apartment Ilham</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 26 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 5/6 Minit</i></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-     <!-- Team Member 3 Ends -->
-    <!-- Team Member 4 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3984.0249844783457!2d101.54913341474246!3d3.088004954386684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d3.0862722!2d101.5486178!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526483359!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Apartment Perdana</h5>
-          <div class="card-text text-black-50"><i class="fas fa-walking"></i> 14 Minit</div><div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 7 Minit (+199s <i class="fas fa-traffic-light"></i>)</div>
+        <!-- Team Member 1 Ends -->
+        <!-- Team Member 2 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7968.016289481112!2d101.55143647407996!3d3.0924908042308936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x31cc4dc5ce110b91%3A0x29c29ee37e314f1!2sPangsapuri%20Jaya!3m2!1d3.099618!2d101.5560529!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526398820!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Apartment Jaya</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 22 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 4/5 Minit</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-     <!-- Team Member 4 Ends -->
-  <!-- Team Member 5 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7968.02433642161!2d101.55011127392983!3d3.091419604245187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.097454!2d101.55270399999999!4m3!3m2!1d3.0855645!2d101.5546598!5e0!3m2!1sen!2smy!4v1559294112925!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">TTDI Jaya</h5>
-          <div class="card-text text-black-50"><i class="fas fa-walking"></i> 21 Minit</div><div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 5 Minit</div>
+        <!-- Team Member 2 Ends -->
+        <!-- Team Member 3 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7968.033817598236!2d101.55056157392997!3d3.0901570042616213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.0949736!2d101.5565615!4m3!3m2!1d3.0855663!2d101.55465919999999!5e0!3m2!1sen!2smy!4v1559293745387!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Apartment Melewar</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 16 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 4 Minit</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-     <!-- Team Member 5 Ends -->
-  <!-- Team Member 6 -->
-    <div class="col-xl-6 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3984.043476107666!2d101.55176751470488!3d3.083071554415214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.0797792999999998!2d101.5533775!4m3!3m2!1d3.0856068999999997!2d101.55464839999999!5e0!3m2!1sen!2smy!4v1559294200035!5m2!1sen!2smy" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      	<div class="card-body text-center">
-          <h5 class="card-title mb-0">Apartment Brunsfield</h5>
-          <div class="card-text text-black-50"><i class="fas fa-walking"></i> 14 Minit</div>
-           <div class="card-text text-black-50"><i class="fas fa-motorcycle"></i><i class="fas fa-car-side"></i> 15 Minit (+199s <i class="fas fa-traffic-light"></i>)</div>
+        <!-- Team Member 3 Ends -->
+        <!-- Team Member 4 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3984.0249844783457!2d101.54913341474246!3d3.088004954386684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d3.0862722!2d101.5486178!4m3!3m2!1d3.0853751999999997!2d101.55477669999999!5e0!3m2!1sen!2smy!4v1568526483359!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Apartment Perdana</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 14 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 7 Minit (+199s <i class="fas fa-traffic-light"></i>)</div>
+            </div>
+          </div>
         </div>
+        <!-- Team Member 4 Ends -->
+        <!-- Team Member 5 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7968.02433642161!2d101.55011127392983!3d3.091419604245187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.097454!2d101.55270399999999!4m3!3m2!1d3.0855645!2d101.5546598!5e0!3m2!1sen!2smy!4v1559294112925!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">TTDI Jaya</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 21 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 5 Minit</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 5 Ends -->
+        <!-- Team Member 6 -->
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3984.043476107666!2d101.55176751470488!3d3.083071554415214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d3.0797792999999998!2d101.5533775!4m3!3m2!1d3.0856068999999997!2d101.55464839999999!5e0!3m2!1sen!2smy!4v1559294200035!5m2!1sen!2smy"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Apartment Brunsfield</h5>
+              <div class="card-text text-black-50"><i class="fas fa-walking mr-1"></i> 14 Minit</div>
+              <div class="card-text text-black-50"><i class="fas fa-motorcycle mr-1"></i><i class="fas fa-car-side"></i> 15 Minit (+199s <i class="fas fa-traffic-light"></i>)</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 6 Ends -->
       </div>
-    </div>
-    <!-- Team Member 6 Ends -->
-  </div>
-  <!-- /.row -->
+      <!-- /.row -->
+    </div> <!-- Container Ends -->
+  </section>
+  <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><small>Made with <i class="fas fa-heart text-danger"></i> by <a href="http://twitter.com/twtpsa" target="_blank">TWTPSA</a>
+    </small></div>
 
+  <!-- Copyright -->
 
+  <!--  FOOTER ENDS  -->
 
-</div>  <!-- Container Ends -->
-</section>
+  <!-- JS SCRIPTS -->
+  <!-- Core -->
+  <script src="./assets/js/jquery/jquery-3.4.1.slim.min.js"></script>
+  <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/js/popper/popper.min.js"></script>
 
+  <!-- JS SCRIPTS ENDS-->
+  </body> <!-- Body ENDS -->
 
-	<!--  FOOTER  -->
-	<footer>
-		<div class="container">
-			TWTPSA <Span id="year"></span> &copy; All rights reserved.
-		</div>
-
-	</footer>
-	<!--  E N D  FOOTERR  -->
-	<!-- JS SCRIPTS -->
-	<!-- Core -->
-	<script src="./assets/vendor/jquery/jquery.min.js"></script>
-	<script src="./assets/vendor/popper/popper.min.js"></script>
-	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="./assets/vendor/headroom/headroom.min.js"></script>
-  <script src="./assets/js/modified-anchor.js"></script>
-  <!-- Argon JS -->
-  <script src="./assets/js/argon.js?v=1.0.1"></script>
-  <!-- Editable precomposed tweet button -->
-  <script src="./assets/js/editable-pre-tweetbtn.js"></script>
-  <!-- Embeded Scripts -->
-  <script>
-    var d = new Date();
-    document.getElementById("year").innerHTML = d.getFullYear();
-  </script>
-  <script>
-    anchors.options.visible = 'always';
-    anchors.add('');
-  </script>
-  <script>
-  function copy_click(clicked_id){
-  var inp =document.createElement('input');
-  document.body.appendChild(inp)
-  inp.value = 'https://tweetpsa.github.io/sewa' + '#' + clicked_id
-  inp.select();
-  document.execCommand('copy',false);
-  inp.remove();
-  }
-  </script>
-	<!-- JS SCRIPTS ENDS-->
-</body>
-
-</html>
+  </html>

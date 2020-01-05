@@ -10,12 +10,8 @@
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Icons -->
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
-  <!-- AnchorJS CSS -->
-  <link type="text/css" href="./assets/css/anchor.css" rel="stylesheet">
-  <!-- END AnchorJS CSS -->
+  <link type="text/css" href="./assets/css/bootstrap.css" rel="stylesheet">
   <!-- CUSTOM CSS -->
   <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
   <!-- CUSTOM CSS ENDS -->
@@ -28,88 +24,51 @@
 <body>
   <!-- NAVBAR -->
   <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="./index.html">
-          <img src="./assets/img/brand/logo-white.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="./index.html">
-                  <img src="./assets/img/brand/logo-blue.png">
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand " href="#"><img class="d-none d-lg-block" src="./assets/img/brand/logo-blue.png"></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Panduan
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/junior">Panduan Daftar Junior</a>
+              <a class="dropdown-item" href="/senior">Panduan Daftar Senior</a>
             </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-file"></i>
-                <span class="nav-link-inner--text">Panduan</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./junior" class="dropdown-item"><i class="fas fa-baby"></i>Panduan Daftar Junior</a>
-                <a href="./senior" class="dropdown-item"><i class="fas fa-child"></i>Panduan Daftar Senior</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="./takwim" class="nav-link" role="button">
-                <i class="far fa-calendar-alt"></i>
-                <span class="nav-link-inner--text">Takwim</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./sewa" class="nav-link" role="button">
-                <i class="fas fa-home"></i>
-                <span class="nav-link-inner--text">Rumah Sewa</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-arrow-down"></i>
-                <span class="nav-link-inner--text">Lain-lain</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./program" class="dropdown-item"><i class="fas fa-file-alt"></i>Senarai Program</a>
-                <a href="./ambilan" class="dropdown-item"><i class="fas fa-calendar-check"></i>Pengambilan Pelajar Baru</a>
-                <a href="./lain" class="dropdown-item"><i class="fas fa-link"></i>Pautan Lain</a>
-                <a href="./feedback" class="dropdown-item"><i class="fas fa-heart"></i>Feedback</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
-                <i class="fa fa-twitter"></i>
-                <span class="nav-link-inner--text d-lg-none">Twitter</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
-                <i class="fab fa-telegram-plane"></i>
-                <span class="nav-link-inner--text d-lg-none">Telegram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/takwim">Takwim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sewa">Rumah Sewa</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter!">
+              <i class="fab fa-twitter"> Twitter</i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Telegram!">
+              <i class="fab fa-telegram-plane"> Telegram</i>
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header> <!-- END NAVBAR -->
   <!-- BOXS -->
   <!-- box title -->
   <section id="background">
-    <div class="container">
+    <div class="container p-5">
       <!-- TABS -->
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -235,10 +194,10 @@
             <h4><i class="fas fa-file-download" style="margin-right:5px;"></i>
           </em>Muat-turun</h4>
             <ul class="text-default">
-            <li><a href="https://www.dropbox.com/s/enp9ybdtdnbadbh/Takwim-Politeknik-2019-2020-ALL.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf"></i>Takwim 2019/2020 All-Politeknik</a></li>
-            <li><a href="https://www.dropbox.com/s/z0a6gxcqfdw200j/Takwim-Politeknik-2019-2020-sabtu-ahad.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf"></i>Takwim 2019/2020 Politeknik-Sabtu-Ahad</a></li>
-            <li><a href="https://www.dropbox.com/s/mec2shplzpmir8s/Takwim-Politeknik-2019-2020-jumaat-sabtu.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf"></i>Takwim 2019/2020 Politeknik-Jumaat-Sabtu</a></li>
-            <li><a href="https://www.dropbox.com/s/3qzj2yoo8a4iuuo/Takwim-Politeknik-2019-2020-ALL-Version.pdf?dl=1" class="text-dark"  target="_blank"><i class="fas fa-file-pdf"></i>Takwim 2019/2020 Politeknik-All-Version</a></li>
+            <li><a href="https://www.dropbox.com/s/enp9ybdtdnbadbh/Takwim-Politeknik-2019-2020-ALL.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Takwim 2019/2020 All-Politeknik</a></li>
+            <li><a href="https://www.dropbox.com/s/z0a6gxcqfdw200j/Takwim-Politeknik-2019-2020-sabtu-ahad.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Takwim 2019/2020 Politeknik-Sabtu-Ahad</a></li>
+            <li><a href="https://www.dropbox.com/s/mec2shplzpmir8s/Takwim-Politeknik-2019-2020-jumaat-sabtu.pdf?dl=1" class="text-dark" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Takwim 2019/2020 Politeknik-Jumaat-Sabtu</a></li>
+            <li><a href="https://www.dropbox.com/s/3qzj2yoo8a4iuuo/Takwim-Politeknik-2019-2020-ALL-Version.pdf?dl=1" class="text-dark"  target="_blank"><i class="fas fa-file-pdf mr-1"></i>Takwim 2019/2020 Politeknik-All-Version</a></li>
           </ul>
           </div>
           <!-- END TAB Content -->
@@ -445,46 +404,21 @@
   </section>
   <!-- E N D  BOXS -->
   <!--  FOOTER  -->
-  <footer>
-    <div class="container">
-      TWTPSA <Span id="year"></span> &copy; All rights reserved.
-    </div>
-  </footer>
-  <!--  E N D  FOOTERR  -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><small>Made with <i class="fas fa-heart text-danger"></i> by <a href="http://twitter.com/twtpsa" target="_blank">TWTPSA</a>
+    </small></div>
+
+  <!-- Copyright -->
+
+  <!--  FOOTER ENDS  -->
 
   <!-- JS SCRIPTS -->
   <!-- Core -->
-  <script src="./assets/vendor/jquery/jquery.min.js"></script>
-  <script src="./assets/vendor/popper/popper.min.js"></script>
-  <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script src="./assets/vendor/headroom/headroom.min.js"></script>
-  <script src="./assets/js/modified-anchor.js"></script>
-  <!-- Argon JS -->
-  <script src="./assets/js/argon.js?v=1.0.1"></script>
-  <script>
-    var d = new Date();
-    document.getElementById("year").innerHTML = d.getFullYear();
-  </script>
-  <script>
-    anchors.options.visible = 'always';
-    anchors.add('');
-  </script>
-  <script>
-    function copy_click(clicked_id) {
-      var inp = document.createElement('input');
-      document.body.appendChild(inp)
-      inp.value = 'https://tweetpsa.github.io/takwim' + '#' + clicked_id
-      inp.select();
-      document.execCommand('copy', false);
-      inp.remove();
-    }
-  </script>
+  <script src="./assets/js/jquery/jquery-3.4.1.slim.min.js"></script>
+  <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/js/popper/popper.min.js"></script>
+
   <!-- JS SCRIPTS ENDS-->
-</body>
+  </body> <!-- Body ENDS -->
 
-
-<!--
-
--->
-
-</html>
+  </html>
