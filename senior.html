@@ -10,12 +10,8 @@
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Icons -->
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
-  <!-- AnchorJS CSS -->
-  <link type="text/css" href="./assets/css/anchor.css" rel="stylesheet">
-  <!-- END AnchorJS CSS -->
+  <link type="text/css" href="./assets/css/bootstrap.css" rel="stylesheet">
   <!-- CUSTOM CSS -->
   <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
   <!-- CUSTOM CSS ENDS -->
@@ -28,251 +24,192 @@
 <body>
   <!-- NAVBAR -->
   <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom bg-default">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="./index.html">
-          <img src="./assets/img/brand/logo-white.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="./index.html">
-                  <img src="./assets/img/brand/logo-blue.png">
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand " href="#"><img class="d-none d-lg-block" src="./assets/img/brand/logo-blue.png"></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Panduan
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/junior">Panduan Daftar Junior</a>
+              <a class="dropdown-item" href="/senior">Panduan Daftar Senior</a>
             </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-file"></i>
-                <span class="nav-link-inner--text">Panduan</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./junior" class="dropdown-item"><i class="fas fa-baby"></i>Panduan Daftar Junior</a>
-                <a href="./senior" class="dropdown-item"><i class="fas fa-child"></i>Panduan Daftar Senior</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="./takwim" class="nav-link" role="button">
-                <i class="far fa-calendar-alt"></i>
-                <span class="nav-link-inner--text">Takwim</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./sewa" class="nav-link" role="button">
-                <i class="fas fa-home"></i>
-                <span class="nav-link-inner--text">Rumah Sewa</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="fas fa-arrow-down"></i>
-                <span class="nav-link-inner--text">Lain-lain</span>
-              </a>
-              <div class="dropdown-menu">
-                <a href="./program" class="dropdown-item"><i class="fas fa-file-alt"></i>Senarai Program</a>
-                <a href="./ambilan" class="dropdown-item"><i class="fas fa-calendar-check"></i>Pengambilan Pelajar Baru</a>
-                <a href="./lain" class="dropdown-item"><i class="fas fa-link"></i>Pautan Lain</a>
-                <a href="./feedback" class="dropdown-item"><i class="fas fa-heart"></i>Feedback</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Twitter!">
-                <i class="fa fa-twitter"></i>
-                <span class="nav-link-inner--text d-lg-none">Twitter</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="Follow us on Telegram!">
-                <i class="fab fa-telegram-plane"></i>
-                <span class="nav-link-inner--text d-lg-none">Telegram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/takwim">Takwim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sewa">Rumah Sewa</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.twitter.com/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter!">
+              <i class="fab fa-twitter"> Twitter</i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.t.me/twtpsa" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Telegram!">
+              <i class="fab fa-telegram-plane"> Telegram</i>
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header> <!-- END NAVBAR -->
-	<!-- BOXS -->
-	<!-- box title -->
-	<section id="background">
-		<div class="container">
-				<h1>Panduan Daftar Senior</h1>
+  <!-- BOXS -->
+  <!-- box title -->
+  <section id="background">
+    <div class="container p-5">
+      <h1>Panduan Daftar Senior</h1>
 
-        <!-- Alert Box -->
-  			<div class="alert alert-warning" role="alert">
-          <em>
-            <span>
-              <i class="fas fa-exclamation-circle" style="margin-right:5px;"></i>
-              Maklumat yang dipaparkan sah untuk Sesi Akademik Disember 2019 sahaja. Jika bercanggah dengan borang panduan, sila ikut <a href="https://www.psa.edu.my/ms/9-pages/658-panduan-pendaftaran-pelajar-senior-sesi-dis-2019">borang panduan.</a>
-            </span>
-          </em></div>
-  			<!-- Alert Box ENDS -->
-        <!-- Tags -->
-          <div class="tags">
-              <span class="tag">Kemaskini</span>
-              <span class="tag">20 November 2019</span>
-          </div>
-        <!-- END Tags -->
-			<!-- box title ends -->
-			<h2>Isi Kandungan</h2>
-			<ul>
-				<li><a href="#daftar" class="text-primary">Panduan Daftar Senior.</a></li>
-				<li><a href="#yuran" class="text-warning">Panduan Bayaran Yuran.</a></li>
-				<li><a href="#online" class="text-success">Panduan Daftar Online.</a></li>
-				<li><a href="#faq" class="text-danger">Pertanyaan Lain (FAQ).</a></li>
-			</ul>
-			<!-- box -->
-			<div id="daftar" class="box">
-						<h3 class="text-primary"><i class="fas fa-id-card"></i>Panduan Daftar Senior</h3>
-				<p>
-					<ol>
-						<li>Pertama sekali, bayar yuran IPT dan Pelbagai mengikut panduan yang disediakan. Pembayaran boleh dibuat bermula dari <strong>02 Disember - 08 Disember 2019</strong> </li>
-						<li>Selepas minimum 36 jam bayaran dibuat, layari <a href="http://spmp.psa.edu.my/">spmp.psa.edu.my</a> untuk melakukan pendaftaran atas talian (online). </li>
-						<li>Pendaftaran online perlu dilaksanakan <strong>sebelum 09 Disember 2019.</strong> </li>
-						<li>Hadir lapordiri pada 09 Disember 2019 dan serahkan <strong>Slip Bayaran Pelbagai</strong> dan <strong>Slip Lapor Diri Online</strong> kepada penasihat akademik. </li>
-						<li>Tahniah, anda kini berjaya mendaftar. Selamat menjalani semester ini dan semoga berjaya!</li>
-					</ol>
-				</p>
-			</div>
-			<!-- box end -->
-			<!-- box -->
-			<div id="yuran" class="box">
+      <!-- Alert Box -->
+      <div class="alert alert-danger" role="alert"><em><i class="fas fa-exclamation-circle mr-2"></i>Maklumat yang dipaparkan sah untuk <b><u>Sesi Akademik Disember 2019</u></b> sahaja. Jika bercanggah dengan borang panduan, sila
+          ikut borang panduan.</em><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button></div>
+      <!-- Alert Box ENDS -->
+      <!-- Tags -->
+      <div class="tags">
+        <span class="tag">Kemaskini</span>
+        <span class="tag">20 November 2019</span>
+      </div>
+      <!-- END Tags -->
+      <!-- box title ends -->
+      <h2>Isi Kandungan</h2>
+      <ul>
+        <li><a href="#daftar" class="text-primary">Panduan Daftar Senior.</a></li>
+        <li><a href="#yuran" class="text-warning">Panduan Bayaran Yuran.</a></li>
+        <li><a href="#online" class="text-success">Panduan Daftar Online.</a></li>
+        <li><a href="#faq" class="text-danger">Pertanyaan Lain (FAQ).</a></li>
+      </ul>
+      <!-- box -->
+      <div id="daftar" class="box">
+        <h3 class="text-primary"><i class="fas fa-id-card mr-2"></i>Panduan Daftar Senior</h3>
+        <p>
+          <ol>
+            <li>Pertama sekali, bayar yuran IPT dan Pelbagai mengikut panduan yang disediakan. Pembayaran boleh dibuat bermula dari <strong>02 Disember - 08 Disember 2019</strong> </li>
+            <li>Selepas minimum 36 jam bayaran dibuat, layari <a href="http://spmp.psa.edu.my/">spmp.psa.edu.my</a> untuk melakukan pendaftaran atas talian (online). </li>
+            <li>Pendaftaran online perlu dilaksanakan <strong>sebelum 09 Disember 2019.</strong> </li>
+            <li>Hadir lapordiri pada 09 Disember 2019 dan serahkan <strong>Slip Bayaran Pelbagai</strong> dan <strong>Slip Lapor Diri Online</strong> kepada penasihat akademik. </li>
+            <li>Tahniah, anda kini berjaya mendaftar. Selamat menjalani semester ini dan semoga berjaya!</li>
+          </ol>
+        </p>
+      </div>
+      <!-- box end -->
+      <!-- box -->
+      <div id="yuran" class="box">
 
-						<h3 class="text-warning"><i class="fas fa-hand-holding-usd"></i>Panduan Bayaran Yuran</h3>
-				<p>
-					<ol>
-						<li>Yuran Pengajian (IPT) <strong>RM200</strong>. </li>
-						<div class="p-3 mt-2 mb-2 quote text-dark">
+        <h3 class="text-warning"><i class="fas fa-hand-holding-usd mr-2"></i>Panduan Bayaran Yuran</h3>
+        <p>
+          <ol>
+            <li>Yuran Pengajian (IPT) <strong>RM200</strong>. </li>
+            <div class="p-3 mt-2 mb-2 quote text-dark">
               <span>Yuran pengajian boleh dibayar melalui:</span>
-                <ul>
-                  <li><a href="https://www.bankislam.biz/" target='_blank'><strong>Perbankan Internet Bank Islam</strong></a></li>
-                  <li><strong>Mesin ATM Bank Islam</strong></li>
-                  <li><strong>Mesin Cash Deposit (CDM)</strong> Bank Islam.</li>
-                </ul>
+              <ul>
+                <li><a href="https://www.bankislam.biz/" target='_blank'><strong>Perbankan Internet Bank Islam</strong></a></li>
+                <li><strong>Mesin ATM Bank Islam</strong></li>
+                <li><strong>Mesin Cash Deposit (CDM)</strong> Bank Islam.</li>
+              </ul>
               <span>Sila rujuk <a href="https://www.psa.edu.my/ms/9-pages/658-panduan-pendaftaran-pelajar-senior-sesi-dis-2019">borang panduan</a> untuk tatacara lengkap.</span>
             </div>
-						<li>Yuran Pelbagai <strong>RM150</strong>. </li>
-						<div class="p-3 mt-2 mb-2 quote text-dark"> Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:
-							<ul>
-								<li>Yuran Koperasi</li>
-								<li>Saham Koperasi</li>
-								<li>Insuran</li>
-								<li>Sukan dan Kokurikulum</li>
-								<li>Aktiviti Pelajar</li>
-								<li>Aktiviti Kamsis (Untuk penghuni Kamsis sahaja.)</li>
-							</ul>
-						</div>
-						<figure class="figure"> <img src="https://i.postimg.cc/0Qwr8pB4/screenshot-1.png" class="figure-img img-fluid rounded m-2" alt="A generic square placeholder image with rounded corners in a figure.">
-							<figcaption class="figure-caption">Contoh slip deposit tunai. Sila bayar kepada:
-                <ul>
-                  <li>Nama akaun: <kbd>KOPERASI POLITEKNIK SULTAN SALAHUDDIN ABDUL AZIZ SHAH BERHAD</kbd></li>
-                  <li>Nombor akaun: <kbd>12038010109339</kbd></li>
-                </ul>
-              </figcaption>
-						</figure>
-					</ol>
-				</p>
-			</div>
-			<!-- box end -->
-			<!-- box -->
-			<div id="online"  class="box">
-						<h3 class="text-success"><i class="fas fa-desktop"></i>Panduan Daftar Online</h3>
-				<p>
-				<ol>
-    <li>Layari <a href="http://spmp.psa.edu.my/">http://spmp.psa.edu.my/</a> dan daftar masuk menggunakan No Kad Pengenalan dan No Pendaftaran anda.</li>
-    <img src="https://i.postimg.cc/Vvxbjc19/screenshot-4.png" class="figure-img img-fluid rounded m-2" alt="A generic square placeholder image with rounded corners in a figure.">
-    <li>Selepas itu, pada menu Pendaftaran klik Kemaskini Maklumat Penjaga. Isikan maklumat penjaga anda dengan lengkap. Ini adalah bagi tujuan kecemasan sepanjang anda berada di PSA.</li>
-    <li>Kemudian, kembali ke menu utama iHELP. Pada menu Pendaftaran, klik Lapor Diri Pelajar Senior. Kemudian Cetak Slip Pengesahan Lapordiri dan serahkan slip
-kepada penasihat akademik anda di hari pendaftaran.</li>
- <img src="https://i.postimg.cc/GpS38wkX/screenshot-5.png" class="figure-img img-fluid rounded m-2" alt="A generic square placeholder image with rounded corners in a figure.">
-<li>Selesai. Anda kini boleh kembali berjimba.</li>
-
-
-</ol>
-				</p>
-			</div>
-		<!-- box end -->
-
-		<!-- box -->
-<div id="faq" class="box">
-			<h3 class="text-danger"><i class="fas fa-question-circle"></i>Soalan Lain - FAQ</h3>
-	<p>
-		<ol>
-			<li>Apa itu <strong>Kamsis</strong>?</li>
-			<div class="p-3 mt-2 mb-2 quote text-dark">Kamsis adalah asrama/kolej penginapan pelajar (Kampus/Kampung Siswa Siswi - Kamsis).</div>
-      <li>Saya tidak ditawarkan Asrama/Kamsis. Apa perlu saya lakukan?</li>
-      <div class="p-3 mt-2 mb-2 quote text-dark">Tempat adalah terhad, pelajar semesta satu dari luar kawasan Kuala Lumpur/ Selangor/ Putrajaya diutamakan. Sebarang pertanyaan lanjut berkaitan asrama sila hubungi Pejabat Warden (03-51634000). Sila dapatkan rumah sewa secepat mungkin sekiranya perlu. Lokasi yang berhampiran adalah apartmen Ilham, apartmen Jaya, apartmen Perdana, apartmen Melewar dan TTDI Jaya. Sewa di Shah Alam agak mahal, sila usaha untuk cari
-        kekosongan bilik dengan pelajar senior untuk mencari sewa termurah. Klik <a href="/sewa">sini</a> untuk melihat jarak rumah sewa berdekatan ke politeknik.</div>
-      <li>Saya kekurangan kasih sayang, apa patut saya lakukan?</li>
-			<div class="p-3 mt-2 mb-2 quote text-dark">Klik <a href="https://www.youtube.com/watch?v=GbulDA5TCBQ">sini.</a> </div>
-      <li>Saya ada pertanyaan lain.</li>
-      <div class="p-3 mt-2 mb-2 quote text-dark">
-        <span>Sebarang pertanyaan umum lain sila hubungi:</span>
-        <ul>
-          <li>03-51634059/4069 (Jabatan Hal Ehwal Pelajar).</li>
-          <li>03-51634000 ext 1273/1274/1275 (Pejabat Warden)</li>
-        </ul>
+            <li>Yuran Pelbagai <strong>RM150</strong>. </li>
+            <div class="p-3 mt-2 mb-2 quote text-dark"> Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:
+              <ul>
+                <li>Yuran Koperasi</li>
+                <li>Saham Koperasi</li>
+                <li>Insuran</li>
+                <li>Sukan dan Kokurikulum</li>
+                <li>Aktiviti Pelajar</li>
+                <li>Aktiviti Kamsis (Untuk penghuni Kamsis sahaja.)</li>
+              </ul>
+            </div> <img src="https://i.postimg.cc/0Qwr8pB4/screenshot-1.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
+            <div class="p-3 bg-white border border-info">
+              Contoh slip deposit tunai. Sila bayar kepada:
+              <ul>
+                <li>Nama akaun: <kbd>KOPERASI POLITEKNIK SULTAN SALAHUDDIN ABDUL AZIZ SHAH BERHAD</kbd></li>
+                <li>Nombor akaun: <kbd>12038010109339</kbd></li>
+              </ul>
+            </div>
+          </ol>
+        </p>
       </div>
-      </li>
-      </ol>
-</div>
-<!-- box end -->
+      <!-- box end -->
+      <!-- box -->
+      <div id="online" class="box">
+        <h3 class="text-success"><i class="fas fa-desktop mr-2"></i>Panduan Daftar Online</h3>
+        <p>
+          <ol>
+            <li>Layari <a href="http://spmp.psa.edu.my/">http://spmp.psa.edu.my/</a> dan daftar masuk menggunakan No Kad Pengenalan dan No Pendaftaran anda.</li>
+            <img src="https://i.postimg.cc/Vvxbjc19/screenshot-4.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
+            <li>Selepas itu, pada menu Pendaftaran klik Kemaskini Maklumat Penjaga. Isikan maklumat penjaga anda dengan lengkap. Ini adalah bagi tujuan kecemasan sepanjang anda berada di PSA.</li>
+            <li>Kemudian, kembali ke menu utama iHELP. Pada menu Pendaftaran, klik Lapor Diri Pelajar Senior. Kemudian Cetak Slip Pengesahan Lapordiri dan serahkan slip
+              kepada penasihat akademik anda di hari pendaftaran.</li>
+            <img src="https://i.postimg.cc/GpS38wkX/screenshot-5.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
+            <li>Selesai. Anda kini boleh kembali berjimba.</li>
 
-		</div>
-		<!--box -->
 
-	</section>
-	<!-- E N D  BOXS -->
-	<!--  FOOTER  -->
-	<footer>
-		<div class="container">
-			TWTPSA <Span id="year"></span> &copy; All rights reserved.
-		</div>
-	</footer>
-	<!--  E N D  FOOTERR  -->
-	<!-- JS SCRIPTS -->
-	<!-- Core -->
-	<script src="./assets/vendor/jquery/jquery.min.js"></script>
-	<script src="./assets/vendor/popper/popper.min.js"></script>
-	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="./assets/vendor/headroom/headroom.min.js"></script>
-	<!-- Argon JS -->
-	<script src="./assets/js/argon.js?v=1.0.1"></script>
-  <script src="./assets/js/modified-anchor.js"></script>
-	<script>
-		var d = new Date();
-		document.getElementById("year").innerHTML = d.getFullYear();
-	</script>
-  <script>
-    anchors.options.visible = 'always';
-    anchors.add('');
-  </script>
-  <script>
-  function copy_click(clicked_id){
-  var inp =document.createElement('input');
-  document.body.appendChild(inp)
-  inp.value = 'https://tweetpsa.github.io/senior' + '#' + clicked_id
-  inp.select();
-  document.execCommand('copy',false);
-  inp.remove();
-  }
-  </script>
-	<!-- JS SCRIPTS ENDS-->
+          </ol>
+        </p>
+      </div>
+      <!-- box end -->
 
-</body>
+      <!-- box -->
+      <div id="faq" class="box">
+        <h3 class="text-danger"><i class="fas fa-question-circle mr-2"></i>Soalan Lain - FAQ</h3>
+        <p>
+          <ol>
+            <li>Apa itu <strong>Kamsis</strong>?</li>
+            <div class="p-3 mt-2 mb-2 quote text-dark">Kamsis adalah asrama/kolej penginapan pelajar (Kampus/Kampung Siswa Siswi - Kamsis).</div>
+            <li>Saya tidak ditawarkan Asrama/Kamsis. Apa perlu saya lakukan?</li>
+            <div class="p-3 mt-2 mb-2 quote text-dark">Tempat adalah terhad, pelajar semesta satu dari luar kawasan Kuala Lumpur/ Selangor/ Putrajaya diutamakan. Sebarang pertanyaan lanjut berkaitan asrama sila hubungi Pejabat Warden (03-51634000).
+              Sila dapatkan rumah sewa secepat mungkin sekiranya perlu. Lokasi yang berhampiran adalah apartmen Ilham, apartmen Jaya, apartmen Perdana, apartmen Melewar dan TTDI Jaya. Sewa di Shah Alam agak mahal, sila usaha untuk cari
+              kekosongan bilik dengan pelajar senior untuk mencari sewa termurah. Klik <a href="/sewa">sini</a> untuk melihat jarak rumah sewa berdekatan ke politeknik.</div>
+            <li>Saya kekurangan kasih sayang, apa patut saya lakukan?</li>
+            <div class="p-3 mt-2 mb-2 quote text-dark">Klik <a href="https://www.youtube.com/watch?v=GbulDA5TCBQ">sini.</a> </div>
+            <li>Saya ada pertanyaan lain.</li>
+            <div class="p-3 mt-2 mb-2 quote text-dark">
+              <span>Sebarang pertanyaan umum lain sila hubungi:</span>
+              <ul>
+                <li>03-51634059/4069 (Jabatan Hal Ehwal Pelajar).</li>
+                <li>03-51634000 ext 1273/1274/1275 (Pejabat Warden)</li>
+              </ul>
+            </div>
+            </li>
+          </ol>
+      </div>
+      <!-- box end -->
 
-</html>
+    </div>
+    <!--box -->
+
+  </section>
+  <!-- E N D  BOXS -->
+  <!--  FOOTER -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><small>Made with <i class="fas fa-heart text-danger"></i> by <a href="http://twitter.com/twtpsa" target="_blank">TWTPSA</a>
+    </small></div>
+
+  <!-- Copyright -->
+
+  <!--  FOOTER ENDS  -->
+
+  <!-- JS SCRIPTS -->
+  <!-- Core -->
+  <script src="./assets/js/jquery/jquery-3.4.1.slim.min.js"></script>
+  <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/js/popper/popper.min.js"></script>
+
+  <!-- JS SCRIPTS ENDS-->
+  </body> <!-- Body ENDS -->
+
+  </html>
