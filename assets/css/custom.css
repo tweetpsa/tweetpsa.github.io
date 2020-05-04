@@ -228,54 +228,32 @@ figure {
 
 .item .icon {
   font-size: 36px;
+  color:white;
 }
 
-.item-twitter .icon {
-  color: #0084b4;
-}
 
 .item-twitter .item-inner {
-  border-top: 3px solid #0084b4;
-}
-
-.item-telegram .icon {
-  color: #354f62;
+  background-color: #0084b4;
 }
 
 .item-telegram .item-inner {
-  border-top: 3px solid #354f62;
-}
-
-.item-sewa .icon {
-  color: #892A4C;
+  background-color: #354f62;
 }
 
 .item-sewa .item-inner {
-  border-top: 3px solid #892A4C;
-}
-
-.item-junior .icon {
-  color: #a2cd41;
+  background-color: #892A4C;
 }
 
 .item-junior .item-inner {
-  border-top: 3px solid #a2cd41;
-}
-
-.item-senior .icon {
-  color: #e9a835;
+background-color: #a2cd41;
 }
 
 .item-senior .item-inner {
-  border-top: 3px solid #e9a835;
-}
-
-.item-takwim .icon {
-  color: #de4947;
+  background-color: #e9a835;
 }
 
 .item-takwim .item-inner {
-  border-top: 3px solid #de4947;
+  background-color: #de4947;
 }
 
 .item-inner {
@@ -300,7 +278,8 @@ figure {
 
 .item .title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 900;
+  color: #FFFFFF;
 }
 
 .item .intro {
@@ -311,7 +290,8 @@ figure {
   margin: 0 auto;
   max-width: 800px;
   margin-bottom: 60px;
-  color: #616670;
+  font-size: 14px;
+  color: #FFFFFF;
 }
 
 .item-inner .link {
