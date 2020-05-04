@@ -368,4 +368,5 @@ kbd {
 @media print {
 	.page-break	{ display: block; page-break-before: always; }
   .container  { margin: 30px 30px 30px 30px; }
+  .hidden-print {display: none;}
 }
