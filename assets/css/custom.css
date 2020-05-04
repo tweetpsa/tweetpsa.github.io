@@ -43,6 +43,12 @@ body {
   border-left: 5px solid #bdbdbd;
 }
 
+.header-global {
+  text-transform:uppercase;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
 /* Tags CSS */
 .tags {
   display: flex;
@@ -345,4 +351,8 @@ figure {
 ::-webkit-scrollbar-thumb
 {
 	background-color: #de4947;
+}
+
+.twitter {
+  color: #0084b4!important;
 }
