@@ -14,6 +14,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+
 html, body {
   height: 100%;
   scroll-behavior: smooth;
@@ -23,7 +24,7 @@ body {
   color: #212529;
   background-color: #f3f3f3;
   /* #f6f8f9; old */
-  font-family: 'LexendDeca-Regular', 'Open Sans', Arial, sans-serif;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
 .hero {
@@ -35,7 +36,6 @@ body {
   width: auto;
   height: 40px;
 }
-
 
 /* Quote CSS */
 .quote {
@@ -142,7 +142,6 @@ body {
   overflow: hidden;
   padding: 0;
   border-radius: 0;
-  font-family: "Cardo", "Times New Roman", Times, serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -179,11 +178,10 @@ body {
 }
 
 /* End Map CSS */
-
 /*smooth scroll */
 .ct-btn-scroll {
-  width: 49px;
-  height: 49px;
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 90px;
   left: 0;
@@ -191,7 +189,6 @@ body {
   margin: auto;
   padding-top: 500px;
   z-index: 9;
-  border-radius: 50%;
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
@@ -200,26 +197,29 @@ img,
 figure {
   max-width: 100%;
 }
+
 .ct-btn-scroll svg {
   color: white;
   animation: zbounce 2s infinite;
 }
 
 @keyframes zbounce {
-
-0% {
+  0% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
-}
-50% {
+  }
+
+  50% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
-}
-100% {
+  }
+
+  100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
+  }
 }
-}
+
 /* End Smooth Scroll */
 /* Cards */
 .item {
@@ -228,9 +228,8 @@ figure {
 
 .item .icon {
   font-size: 36px;
-  color:white;
+  color: white;
 }
-
 
 .item-twitter .item-inner {
   background-color: #0084b4;
@@ -245,7 +244,7 @@ figure {
 }
 
 .item-junior .item-inner {
-background-color: #a2cd41;
+  background-color: #a2cd41;
 }
 
 .item-senior .item-inner {
@@ -270,6 +269,10 @@ background-color: #a2cd41;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   height: 100%;
+}
+
+.item-inner:hover {
+  opacity: 0.9;
 }
 
 .item .icon-holder {
@@ -303,10 +306,9 @@ background-color: #a2cd41;
   z-index: 1;
   background-image: url(../images/empty.gif);
 }
+
 /* Cards Ends */
-
 /* TWEET BUTTON */
-
 .tweet {
   background-color: #1da1f2;
   border: 1px solid #1da1f2;
@@ -327,4 +329,20 @@ background-color: #a2cd41;
   color: #fff !important;
   background-color: #1b95e0;
   border: 1px solid #1b95e0;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #de4947;
 }
