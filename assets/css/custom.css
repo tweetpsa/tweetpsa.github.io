@@ -36,51 +36,7 @@ body {
   height: 40px;
 }
 
-svg {
-  fill: white;
-}
 
-.buttonw svg {
-fill: white;
-transform: perspective(1px) translateZ(0);
-}
-
-.buttonw a:hover {
--webkit-animation-name: bounce;
-animation-name: bounce;
--webkit-animation-duration: .3s, 1.5s;
-animation-duration: .3s, 1.5s;
--webkit-animation-delay: 0s, .3s;
-animation-delay: 0s, .3s;
--webkit-animation-timing-function: ease-out, ease-in-out;
-animation-timing-function: ease-out, ease-in-out;
--webkit-animation-iteration-count: 1, infinite;
-animation-iteration-count: 1, infinite;
--webkit-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
--webkit-animation-direction: normal, alternate;
-animation-direction: normal, alternate;
-}
-
-@@keyframes bounce {
-100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-}
-
-0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-}
-50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-}
-100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-}
-}
 /* Quote CSS */
 .quote {
   background-color: #f3f3f3;
@@ -223,6 +179,7 @@ animation-direction: normal, alternate;
 }
 
 /* End Map CSS */
+
 /*smooth scroll */
 .ct-btn-scroll {
   width: 49px;
@@ -243,7 +200,26 @@ img,
 figure {
   max-width: 100%;
 }
+.ct-btn-scroll svg {
+  color: white;
+  animation: zbounce 2s infinite;
+}
 
+@keyframes zbounce {
+
+0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+50% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+}
+100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+}
 /* End Smooth Scroll */
 /* Cards */
 .item {
