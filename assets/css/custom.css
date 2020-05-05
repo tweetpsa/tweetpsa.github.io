@@ -28,7 +28,7 @@ body {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80');
+  background: url('./assets/img/background.jpg');
   background-position: center;
 }
 
