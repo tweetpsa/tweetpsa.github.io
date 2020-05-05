@@ -1,2 +1,2 @@
-$("#menu").load("./menu.html");
-$("#footer").load("./footer.html");
+$("#menu").load("./include/menu.html");
+$("#footer").load("./include/footer.html");
