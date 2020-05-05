@@ -366,7 +366,20 @@ kbd {
 }
 
 @media print {
-	.page-break	{ display: block; page-break-before: always; }
-  .container  { margin: 30px 30px 30px 30px; }
+  body {
+    background-color: #FFFFFF;
+    font-size: 1.3rem;
+  }
   .hidden-print {display: none;}
+  .box {
+    background-color: #FFF;
+    box-shadow: none;
+    padding: 20px 30px;
+    margin-top: 10px;
+}
+  .btn {display: none;}
+@page {
+     size: A4; /* DIN A4 standard, Europe */
+     margin: 15mm 15mm 15mm 15mm;
+   }
 }
