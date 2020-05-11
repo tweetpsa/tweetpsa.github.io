@@ -2,30 +2,57 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
-  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-  <link type="text/css" href="./assets/css/bootstrap.css" rel="stylesheet">
-  <link type="text/css" href="./assets/css/custom.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
   <title>TWTPSA</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free-5.13.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap-4.4.1/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+  <!-- Colors CSS -->
+  <link href="vendor/colors/colors.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles -->
+  <link href="assets/css/css.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div id="menu"></div> <!-- NOT NEEDED FOR HOMEPAGE -->
+  <div id="menu"></div>
 
-  <!-- CONTENT -->
-  <section id="background">
-    <div class="container p-lg-5 px-md-0">
+  <!-- Wrapper -->
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right d-none d-md-block no-print" id="sidebar-wrapper">
+      <div class="list-group list-group-flush sticky-top">
+        <a href="#card-01" class="list-group-item list-group-item-action bg-light border-0 blue"><i class="fas fa-address-card fa-fw m-1"></i>Pendaftaran</a>
+        <a href="#card-02" class="list-group-item list-group-item-action bg-light border-0  green"><i class="fas fa-hand-holding-usd fa-fw m-1"></i>Bayaran Yuran</a>
+        <a href="#card-03" class="list-group-item list-group-item-action bg-light border-0 orange"><i class="fas fa-file-invoice-dollar fa-fw m-1"></i>PTPTN</a>
+        <a href="#card-04" class="list-group-item list-group-item-action bg-light border-0 purple"><i class="fas fa-question-circle fa-fw m-1"></i>Soalan Lain - FAQ</a>
+        <a href="#" class="list-group-item list-group-item-action border-0 bg-primary text-white"><i class="fab fa-twitter fa-fw m-1"></i>Follow us on Twitter</a>
+      </div>
+    </div>
+    <!-- Sidebar END -->
+
+    <!-- Content -->
+    <div id="page-content-wrapper" class="p-5">
+
+      <!-- CONTENT HERE -->
       <h1>Panduan Daftar Senior</h1>
 
       <!-- Alert Box -->
-      <div class="alert alert-danger" role="alert"><em><i class="fas fa-exclamation-circle mr-2"></i>Maklumat yang dipaparkan sah untuk <b><u>Sesi Akademik Disember 2019</u></b> sahaja. Jika bercanggah dengan borang panduan, sila
-          ikut borang panduan.</em><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button></div>
+      <div class="alert alert-info" role="alert">
+        <span><i class="fas fa-exclamation-circle mr-2"></i>Maklumat yang dipaparkan sah untuk <b><u>Sesi Akademik Disember 2019</u></b> sahaja. Jika bercanggah dengan borang panduan, sila ikut borang panduan.</span>
+      </div>
       <!-- Alert Box ENDS -->
       <!-- Tags -->
       <div class="tags">
@@ -33,18 +60,10 @@
         <span class="tag">20 November 2019</span>
       </div>
       <!-- END Tags -->
-      <!-- box title ends -->
-      <h2>Isi Kandungan</h2>
-      <ul>
-        <li><a href="#daftar" class="text-primary">Panduan Daftar Senior.</a></li>
-        <li><a href="#yuran" class="text-warning">Panduan Bayaran Yuran.</a></li>
-        <li><a href="#online" class="text-success">Panduan Daftar Online.</a></li>
-        <li><a href="#faq" class="text-danger">Pertanyaan Lain (FAQ).</a></li>
-      </ul>
       <!-- box -->
-      <div id="daftar" class="box">
-        <h3 class="text-primary"><i class="fas fa-id-card mr-2"></i>Panduan Daftar Senior</h3>
-        <p>
+      <div id="card-01" class="card border--blue  my-3">
+        <div class="card-body">
+          <h3 class="card-title blue"><i class="fas fa-id-card mr-2"></i>Panduan Daftar Senior</h3>
           <ol>
             <li>Pertama sekali, bayar yuran IPT dan Pelbagai mengikut panduan yang disediakan. Pembayaran boleh dibuat bermula dari <strong>02 Disember - 08 Disember 2019</strong> </li>
             <li>Selepas minimum 36 jam bayaran dibuat, layari <a href="http://spmp.psa.edu.my/">spmp.psa.edu.my</a> untuk melakukan pendaftaran atas talian (online). </li>
@@ -52,17 +71,16 @@
             <li>Hadir lapordiri pada 09 Disember 2019 dan serahkan <strong>Slip Bayaran Pelbagai</strong> dan <strong>Slip Lapor Diri Online</strong> kepada penasihat akademik. </li>
             <li>Tahniah, anda kini berjaya mendaftar. Selamat menjalani semester ini dan semoga berjaya!</li>
           </ol>
-        </p>
+        </div>
       </div>
       <!-- box end -->
       <!-- box -->
-      <div id="yuran" class="box">
-
-        <h3 class="text-warning"><i class="fas fa-hand-holding-usd mr-2"></i>Panduan Bayaran Yuran</h3>
-        <p>
+      <div id="card-02" class="card border--green  my-3">
+        <div class="card-body">
+          <h3 class="card-title green"><i class="fas fa-hand-holding-usd mr-2"></i>Panduan Bayaran Yuran</h3>
           <ol>
             <li>Yuran Pengajian (IPT) <strong>RM200</strong>. </li>
-            <div class="p-3 mt-2 mb-2 quote text-dark">
+            <div class="card my-2 p-3 border--green bl-thicc">
               <span>Yuran pengajian boleh dibayar melalui:</span>
               <ul>
                 <li><a href="https://www.bankislam.biz/" target='_blank'><strong>Perbankan Internet Bank Islam</strong></a></li>
@@ -72,7 +90,8 @@
               <span>Sila rujuk <a href="https://www.psa.edu.my/ms/9-pages/658-panduan-pendaftaran-pelajar-senior-sesi-dis-2019">borang panduan</a> untuk tatacara lengkap.</span>
             </div>
             <li>Yuran Pelbagai <strong>RM150</strong>. </li>
-            <div class="p-3 mt-2 mb-2 quote text-dark"> Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:
+            <div class="card my-2 p-3 border--green bl-thicc">
+              <span> Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:</span>
               <ul>
                 <li>Yuran Koperasi</li>
                 <li>Saham Koperasi</li>
@@ -81,52 +100,54 @@
                 <li>Aktiviti Pelajar</li>
                 <li>Aktiviti Kamsis (Untuk penghuni Kamsis sahaja.)</li>
               </ul>
-            </div> <img src="https://i.postimg.cc/0Qwr8pB4/screenshot-1.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
-            <div class="p-3 bg-white border border-info">
-              Contoh slip deposit tunai. Sila bayar kepada:
+              <img src="https://i.postimg.cc/0Qwr8pB4/screenshot-1.png" class="img-fluid mx-auto m-3 float-left" alt="Slip Yuran Politeknik Ban Islam.">
+              <span> Contoh slip deposit tunai. Sila bayar kepada:</span>
               <ul>
                 <li>Nama akaun: <kbd>KOPERASI POLITEKNIK SULTAN SALAHUDDIN ABDUL AZIZ SHAH BERHAD</kbd></li>
                 <li>Nombor akaun: <kbd>12038010109339</kbd></li>
               </ul>
             </div>
           </ol>
-        </p>
+        </div>
       </div>
       <!-- box end -->
       <!-- box -->
-      <div id="online" class="box">
-        <h3 class="text-success"><i class="fas fa-desktop mr-2"></i>Panduan Daftar Online</h3>
-        <p>
+      <div id="card-03" class="card border--orange  my-3">
+        <div class="card-body">
+          <h3 class="card-title orange"><i class="fas fa-desktop mr-2"></i>Panduan Daftar Online</h3>
           <ol>
             <li>Layari <a href="http://spmp.psa.edu.my/">http://spmp.psa.edu.my/</a> dan daftar masuk menggunakan No Kad Pengenalan dan No Pendaftaran anda.</li>
-            <img src="https://i.postimg.cc/Vvxbjc19/screenshot-4.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
+            <img src="https://i.postimg.cc/Vvxbjc19/screenshot-4.png" class="img-fluid rounded mx-auto m-3 d-block" alt="Slip Yuran Politeknik Bank Islam.">
             <li>Selepas itu, pada menu Pendaftaran klik Kemaskini Maklumat Penjaga. Isikan maklumat penjaga anda dengan lengkap. Ini adalah bagi tujuan kecemasan sepanjang anda berada di PSA.</li>
             <li>Kemudian, kembali ke menu utama iHELP. Pada menu Pendaftaran, klik Lapor Diri Pelajar Senior. Kemudian Cetak Slip Pengesahan Lapordiri dan serahkan slip
               kepada penasihat akademik anda di hari pendaftaran.</li>
-            <img src="https://i.postimg.cc/GpS38wkX/screenshot-5.png" class="img-fluid rounded mx-auto m-3 d-block border border-info" alt="Slip Yuran Politeknik Ban Islam.">
+            <img src="https://i.postimg.cc/GpS38wkX/screenshot-5.png" class="img-fluid rounded mx-auto m-3 d-block" alt="Slip Yuran Politeknik Bank Islam.">
             <li>Selesai. Anda kini boleh kembali berjimba.</li>
-
-
-          </ol>
-        </p>
+        </div>
+        </ol>
       </div>
       <!-- box end -->
-
       <!-- box -->
-      <div id="faq" class="box">
-        <h3 class="text-danger"><i class="fas fa-question-circle mr-2"></i>Soalan Lain - FAQ</h3>
-        <p>
+      <div id="card-04" class="card border--purple  my-3">
+        <div class="card-body">
+          <h3 class="card-title purple"><i class="fas fa-question-circle mr-2"></i>Soalan Lain - FAQ</h3>
           <ol>
             <li>Apa itu <strong>Kamsis</strong>?</li>
-            <div class="p-3 mt-2 mb-2 quote text-dark">Kamsis adalah asrama/kolej penginapan pelajar (Kampus/Kampung Siswa Siswi - Kamsis).</div>
+            <div class="card my-2 p-3 border--purple bl-thicc">
+              <span>Kamsis adalah asrama/kolej penginapan pelajar (Kampus/Kampung Siswa Siswi - Kamsis).</span>
+              </div>
             <li>Saya tidak ditawarkan Asrama/Kamsis. Apa perlu saya lakukan?</li>
-            <div class="p-3 mt-2 mb-2 quote text-dark">Tempat adalah terhad, pelajar semesta satu dari luar kawasan Kuala Lumpur/ Selangor/ Putrajaya diutamakan. Sebarang pertanyaan lanjut berkaitan asrama sila hubungi Pejabat Warden (03-51634000).
+            <div class="card my-2 p-3 border--purple bl-thicc">
+              <span>Tempat adalah terhad, pelajar semesta satu dari luar kawasan Kuala Lumpur/ Selangor/ Putrajaya diutamakan. Sebarang pertanyaan lanjut berkaitan asrama sila hubungi Pejabat Warden (03-51634000).
               Sila dapatkan rumah sewa secepat mungkin sekiranya perlu. Lokasi yang berhampiran adalah apartmen Ilham, apartmen Jaya, apartmen Perdana, apartmen Melewar dan TTDI Jaya. Sewa di Shah Alam agak mahal, sila usaha untuk cari
-              kekosongan bilik dengan pelajar senior untuk mencari sewa termurah. Klik <a href="/sewa">sini</a> untuk melihat jarak rumah sewa berdekatan ke politeknik.</div>
+              kekosongan bilik dengan pelajar senior untuk mencari sewa termurah. Klik <a href="/sewa">sini</a> untuk melihat jarak rumah sewa berdekatan ke politeknik.</span>
+            </div>
             <li>Saya kekurangan kasih sayang, apa patut saya lakukan?</li>
-            <div class="p-3 mt-2 mb-2 quote text-dark">Klik <a href="https://www.youtube.com/watch?v=GbulDA5TCBQ">sini.</a> </div>
+            <div class="card my-2 p-3 border--purple bl-thicc">
+              <span>Klik <a href="https://www.youtube.com/watch?v=GbulDA5TCBQ">sini.</a> </span>
+              </div>
             <li>Saya ada pertanyaan lain.</li>
-            <div class="p-3 mt-2 mb-2 quote text-dark">
+            <div class="card my-2 p-3 border--purple bl-thicc">
               <span>Sebarang pertanyaan umum lain sila hubungi:</span>
               <ul>
                 <li>03-51634059/4069 (Jabatan Hal Ehwal Pelajar).</li>
@@ -135,24 +156,29 @@
             </div>
             </li>
           </ol>
+        </div>
       </div>
-      <!-- box end -->
+
+      <center>
+        <button class="btn btn-sm btn-primary no-print" onclick="window.print()"><i class="fas fa-print"></i> Print</button>
+      </center>
 
     </div>
-    <!--box -->
+    <!-- Content End -->
 
-  </section>
-  <!-- CONTENT END -->
+  </div>
+  <!-- Wrapper End -->
 
   <div id="footer"></div>
 
-  <script src="./assets/js/jquery/jquery-3.5.1.js"></script>
-  <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
-  <script src="./assets/js/popper/popper.min.js"></script>
-  <script src="./assets/js/js.js"></script>
-  <!-- <script src="./assets/js/editable-pre-tweetbtn.js"></script>   ONLY FOR SEWA PAGE - TWEET BUTTON -->
-  <!-- <script src="./assets/js/typed/typed.min.js"></script> ONLY FOR HOMEPAGE - TYPED -->
-  <!-- <script src="./assets/js/typed/typed-words.js"></script> ONLY FOR HOMEPAGE - TYPED -->
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery-3.5.1.js"></script>
+  <script src="vendor/bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/js.js"></script>
+
+  <!-- Page level custom scripts -->
 
 </body>
 
