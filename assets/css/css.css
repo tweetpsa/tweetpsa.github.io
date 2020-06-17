@@ -237,6 +237,10 @@ kbd {
   border-left-width: .25rem;
 }
 
+.card-body {
+  word-break: break-word;
+}
+
 /* TWEET BUTTON */
 .tweet {
   background-color: #1da1f2;
