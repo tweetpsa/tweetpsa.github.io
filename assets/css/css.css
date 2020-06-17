@@ -209,7 +209,7 @@ kbd {
   white-space: nowrap;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.9px;
 }
 
 .tag:first-child {
@@ -223,7 +223,7 @@ kbd {
   margin-left: 0px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  background-color: #7889e8;
+  background-color: #395ecc;
   color: #fff;
 }
 
