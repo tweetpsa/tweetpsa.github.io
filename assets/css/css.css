@@ -241,6 +241,10 @@ kbd {
   word-break: break-word;
 }
 
+.about {
+  max-width: 850px;
+}
+
 /* TWEET BUTTON */
 .tweet {
   background-color: #1da1f2;
