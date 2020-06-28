@@ -1,3 +1,10 @@
+/* Color
+
+ light-gray: #F5F8FA;
+
+
+*/
+
 html, body {
   height: 100%;
   scroll-behavior: smooth;
@@ -5,7 +12,7 @@ html, body {
 
 body {
   color: #212529;
-  background-color: #F5F8FA;
+  background-color: #FFF;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
