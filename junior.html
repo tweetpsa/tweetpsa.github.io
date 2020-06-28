@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link href="vendor/bootstrap-4.4.1/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap-5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- Colors CSS -->
   <link href="vendor/open-clrs/open-clrs.min.css" rel="stylesheet" type="text/css">
@@ -27,8 +27,51 @@
 </head>
 
 <body>
-  <div id="menu"></div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="d-block" src="assets/img/brand/logo-blue.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Panduan
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/junior">Daftar Junior</a>
+              <a class="dropdown-item" href="/senior">Daftar Senior</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Takwim
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/takwim-dip">Takwim Diploma</a>
+              <a class="dropdown-item" href="/takwim-deg">Takwim Sarjana (Degree)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sewa">Rumah Sewa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/student-resources">Student Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
   <!-- Wrapper -->
   <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
@@ -44,7 +87,7 @@
     <!-- Sidebar END -->
 
     <!-- Content -->
-    <div id="page-content-wrapper" class="p-2 p-sm-5">
+    <div id="content" class="p-2 p-sm-5">
 
       <h1>Panduan Daftar Junior</h1> <!-- Page Title -->
       <!-- Alert Box -->
@@ -64,15 +107,17 @@
           <ol>
             <li>Pertama sekali, semak keputusan permohonan anda di <a href="http://ambilan.mypolycc.edu.my/portalbpp2/index.asp" target="_blank">http://ambilan.mypolycc.edu.my/</a>.</li>
             <li><strong>Cetak</strong> Surat Tawaran dan Borang Jawapan Tawaran (BJT).</li>
-            <li><strong>Lengkapkan</strong> Borang Jawapan Tawaran dan <strong>hantar</strong> borang tersebut (melalui pos atau secara terus) ke <a href="#" data-toggle="tooltip" data-placement="top" title="Politeknik Sultan Salahuddin Abdul Aziz Shah, Persiaran Usahawan, Seksyen U1, 40150 Shah Alam, Selangor Darul Ehsan (3.08681, 101.55676)">Politeknik Shah Alam.</a></li>
+            <li><strong>Lengkapkan</strong> Borang Jawapan Tawaran dan <strong>hantar</strong> borang tersebut (melalui pos atau secara terus) ke <a href="#" data-toggle="tooltip" data-placement="top"
+                title="Politeknik Sultan Salahuddin Abdul Aziz Shah, Persiaran Usahawan, Seksyen U1, 40150 Shah Alam, Selangor Darul Ehsan (3.08681, 101.55676)">Politeknik Shah Alam.</a></li>
             <li>Selepas 7 hari, semak status penerimaan BJT.</li>
             <li>Setelah status diterima, layari <a href="http://pmisdev.psa.edu.my/logindaftarbaru/" target="_blank">pmisdev.psa.edu.my/logindaftarbaru</a></li>
             <li>Di laman tersebut, masukkan nombor kad pengenalan anda dan klik butang semak.</li>
             <li>Baca maklumat yang dipaparkan dengan teliti dan <strong>cetak</strong> Dokumen Panduan &amp; Borang HHP/HEP.</li>
             <li>Sila bayar yuran IPT/Pelbagai/Kamsis mengikut panduan yang disediakan. Bayaran boleh dilakukan bermula 17 September sehingga 29 November 2019. Pelajar dinasihatkan membuat bayaran dan pendaftaran online <strong>sebelum 29
                 November 2019</strong> untuk melancarkan proses lapor diri pada 02 Disember 2019.</li>
-            <li>Selepas minimum 36 jam bayaran dibuat, layari <a href="http://spmp.psa.edu.my/uspmp2/logindaftarbaru.jsp/" target="_blank">  spmp.psa.edu.my/uspmp2/logindaftarbaru</a> dan semak status bayaran.</li>
-            <li>Selepas status bayaran diterima, <strong>daftar online</strong> dengan menyemak maklumat yang dipaparkan dan tekan butang “Cetak Slip” bagi mencetak Slip Pengesahan Pendaftaran Dalam Talian (Online). Simpan Slip Pengesahan Pendaftaran Dalam Talian (Online) dan bawa bersama ketika melapor diri di Politeknik.</li>
+            <li>Selepas minimum 36 jam bayaran dibuat, layari <a href="http://spmp.psa.edu.my/uspmp2/logindaftarbaru.jsp/" target="_blank"> spmp.psa.edu.my/uspmp2/logindaftarbaru</a> dan semak status bayaran.</li>
+            <li>Selepas status bayaran diterima, <strong>daftar online</strong> dengan menyemak maklumat yang dipaparkan dan tekan butang “Cetak Slip” bagi mencetak Slip Pengesahan Pendaftaran Dalam Talian (Online). Simpan Slip Pengesahan Pendaftaran
+              Dalam Talian (Online) dan bawa bersama ketika melapor diri di Politeknik.</li>
             <li><strong>Lengkapkan</strong> kesemua dokumen HHP/HEP dan borang PTPTN jika anda memerlukan bantuan pinjaman kewangan.</li>
             <li>Hadir lapordiri pada 02 Disember 2019 bersama kesemua dokumen yang diperlukan.</li>
             <li>🎉 Tahniah, anda kini berjaya mendaftar. Selamat menjalani Minggu Suai Kenal. Selamat datang ke PSA!</li>
@@ -83,44 +128,50 @@
       <!-- Card 02 -->
       <div id="card-02" class="card border-green-9 my-3">
         <div class="card-body">
-          <h2 class="card-title green-9"><i class="fas fa-hand-holding-usd mr-2"></i>Panduan Bayaran Yuran</h3>
-            <ol>
-              <li>Yuran Pengajian (IPT) <strong>RM 200</strong>.</li>
-              <div class="card my-2 p-3 bl-thicc">
-                <span>Yuran pengajian boleh dibayar melalui:</span>
-                <ul>
-                  <li><a href="https://www.bankislam.biz/" target='_blank'><strong>Perbankan Internet Bank Islam</strong></a></li>
-                  <li><strong>Mesin ATM Bank Islam</strong></li>
-                  <li><strong>Mesin Cash Deposit (CDM) Bank Islam.</strong></li>
-                  <span>Sila rujuk borang panduan untuk tatacara lengkap.</span>
-                </ul>
-              </div>
-              <li>Yuran Pelbagai <strong>RM600</strong>.</li>
-              <div class="card my-2 p-3 bl-thicc">
-                <span>Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:</span>
-                <ul>
-                  <li>Yuran Koperasi</li>
-                  <li>Saham Koperasi</li>
-                  <li>Minggu Suai Kenal (MSK), kelengkapan MSK, dan Inspirasi Transformasi Diri (ITD)</li>
-                  <li>Insuran</li>
-                  <li>Sukan dan Kokurikulum</li>
-                  <li>Aktiviti Pelajar</li>
-                  <li>Aktiviti Kamsis (Untuk penghuni Kamsis sahaja.)</li>
-                </ul>
-                <img src="https://i.postimg.cc/0Qwr8pB4/screenshot-1.png" class="img-fluid rounded mx-auto m-3 d-block" alt="Slip Bank Islam Yuran Politeknik">
-                <div class="p-3">
-                  <span>Contoh slip deposit tunai. Amaun yang tertera di gambar adalah untuk pelajar senior. Pelajar baharu perlu membayar <strong>RM600</strong>. Sila bayar kepada :</span>
-                  <ul>
-                    <li>Nama akaun: <kbd>KOPERASI POLITEKNIK SULTAN SALAHUDDIN ABDUL AZIZ SHAH BERHAD</kbd></li>
-                    <li>Nombor akaun: <kbd>12038010109339</kbd></li>
-                  </ul>
-                </div>
-              </div>
-              <li>Yuran Kolej Kediaman (Kamsis) <strong>RM60</strong>.</li>
-              <div class="card my-2 p-3 bl-thicc">Yuran Kamsis hanya perlu dibayar oleh pelajar yang ditawarkan penginapan sahaja. Cara bayaran yuran Kamsis adalah sama dengan yuran pengajian IPT (Dibayar serentak). Sila rujuk borang  panduan untuk tatacara lengkap.</div>
-              <li>Yuran Aktiviti Kolej Kediaman (Kamsis) <strong>RM50</strong>.</li>
-              <div class="card my-2 p-3 bl-thicc">Yuran Aktiviti Kamsis hanya perlu dibayar oleh pelajar yang ditawarkan penginapan sahaja. Dibayar secara tunai semasa hari pendaftaran.</div>
-            </ol>
+          <h2 class="card-title green-9"><i class="fas fa-hand-holding-usd mr-2"></i>Panduan Bayaran Yuran</h2>
+          <ol>
+            <li>Yuran Pengajian (IPT) <strong>RM 200</strong></li>
+            <div class="card my-2 p-3 bl-thicc">
+              <span>Yuran pengajian boleh dibayar melalui:</span>
+              <ul>
+                <li><a href="https://www.bankislam.biz/" target='_blank'><strong>Perbankan Internet Bank Islam</strong></a></li>
+                <li><strong>Mesin ATM Bank Islam</strong></li>
+                <li><strong>Mesin Cash Deposit (CDM) Bank Islam.</strong></li>
+                <span>Sila rujuk borang panduan untuk tatacara lengkap.</span>
+              </ul>
+            </div>
+            <li>Yuran Pelbagai <strong>RM600</strong>.</li>
+            <div class="card my-2 p-3 bl-thicc">
+              <span>Yuran pelbagai perlu dibayar mengunakan <strong>Slip Deposit Tunai</strong> di Bank Islam. Yuran pelbagai adalah untuk perkara berikut:</span>
+              <ul>
+                <li>Yuran Koperasi</li>
+                <li>Saham Koperasi</li>
+                <li>Minggu Suai Kenal (MSK), kelengkapan MSK, dan Inspirasi Transformasi Diri (ITD)</li>
+                <li>Insuran</li>
+                <li>Sukan dan Kokurikulum</li>
+                <li>Aktiviti Pelajar</li>
+                <li>Aktiviti Kamsis (Untuk penghuni Kamsis sahaja.)</li>
+              </ul>
+              <img src="./assets/img/images/Slip-Deposit-Tunai-TWTPSA-F_c.jpg" class="img-fluid rounded mx-auto m-3 d-block  border" alt="Slip Bank Islam Yuran Politeknik"></img>
+              <figcaption class="figure-caption text-center">(Contoh Slip Deposit Tunai Bank Islam)</figcaption>
+              <ul class="list-unstyled mx-2 my-4">
+                <li><span class="badge bg-pink-5 mx-2" alt="1">1.</span>Nama: <span class="font-italic font-weight-bold">Nama Penuh Pelajar</span></li>
+                <li><span class="badge bg-yellow-3 mx-2">2.</span>Nombor Akaun:<span class="font-weight-bold"> 12038010109339</span></li>
+                <li><span class="badge bg-green-5 mx-2">3.</span>Wang Tunai (Amaun): <span class="font-weight-bold">Enam Ratus Sahaja - RM 600.00</span></li>
+                <li><span class="badge bg-blue-9 mx-2">4.</span>Bayar Kepada: <span class="font-weight-bold">KOPERASI POLITEKNIK SULTAN SALAHUDDIN ABDUL AZIZ SHAH BERHAD</span></li>
+                <li><span class="badge bg-red-5 mx-2">5.</span>Jenis Bayaran: <span class="font-weight-bold">Yuran Pelbagai</span></li>
+                <li><span class="badge bg-violet-4 mx-2">6.</span>NRIC: <span class="font-italic font-weight-bold">No. Kad Pengenalan Pelajar</span></li>
+              </ul>
+            </div>
+            <li>Yuran Kolej Kediaman (Kamsis) <strong>RM60</strong>.</li>
+            <div class="card my-2 p-3 bl-thicc">
+              <span>Yuran Kamsis hanya perlu dibayar oleh pelajar yang ditawarkan penginapan sahaja. Cara bayaran yuran Kamsis adalah sama dengan yuran pengajian IPT (Dibayar serentak). Sila rujuk borang panduan untuk tatacara lengkap.</span>
+            </div>
+            <li>Yuran Aktiviti Kolej Kediaman (Kamsis) <strong>RM50</strong>.</li>
+            <div class="card my-2 p-3 bl-thicc">
+              <span>Yuran Aktiviti Kamsis hanya perlu dibayar oleh pelajar yang ditawarkan penginapan sahaja. Dibayar secara tunai semasa hari pendaftaran.</span>
+            </div>
+          </ol>
         </div>
       </div>
       <!-- Card 02 End -->
@@ -138,6 +189,8 @@
             <li>No PIN hanya sah dalam tempoh 6 bulan bermula dari tarikh pembelian No PIN di Bank Simpanan Nasional (BSN) sehingga tarikh pendaftaran permohonan online.</li>
             <li>Mempunyai alamat e-mel yang sah bagi urusan rasmi PTPTN.</li>
           </ul>
+          <span>Permohonan perlu dilakukan menerusi laman web PTPTN di <a href="https://www.ptptn.gov.my/" target="_blank">https://www.ptptn.gov.my/</a>. Bagi bakal pelajar Politeknik Shah Alam, anda harus mempunyai akaun SSPN, membeli pin di BSN dan
+            mempunyai akaun Bank Islam.</span>
         </div>
       </div>
       <!-- Card 03 End -->
@@ -224,16 +277,21 @@
   </div>
   <!-- Wrapper End -->
 
-  <div id="footer"></div>
+  <div id="footer">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 border-top"><small>Made with <i class="fas fa-heart text-danger"></i> by <a href="http://twitter.com/twtpsa" target="_blank">TWTPSA</a></small></div>
+    <!-- Copyright -->
+
+  </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery-3.5.1.js"></script>
-  <script src="vendor/bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap-5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="assets/js/js.js"></script>
 
   <!-- Page level custom scripts -->
+
 
 </body>
 

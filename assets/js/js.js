@@ -1,8 +1,7 @@
-$("#menu").load("./assets/include/menu.html");
-$("#footer").load("./assets/include/footer.html");
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
 function myTweet() {
   var x = document.getElementById("myText").value;
