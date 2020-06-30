@@ -301,3 +301,11 @@ kbd {
     display: none !important;
   }
 }
+
+/* Software Card */
+
+.card-soft {
+    max-height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+}
