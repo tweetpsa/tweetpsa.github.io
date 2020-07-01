@@ -77,9 +77,29 @@
   <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div class=" border-right d-none d-md-block no-print" id="sidebar-wrapper">
-      <div class="list-group list-group-flush sticky-top">
-        <a href="#popular" class="list-group-item list-group-item-action border-0 blue-9">Popular Software Alternatives</a>
-        <a href="#recommended" class="list-group-item list-group-item-action border-0  green-9">Recommended Software</a>
+      <div class="list-group list-group-flush sticky-top software-nav">
+        <nav id="nav">
+          <ul class="list-unstyled p-3 text-muted">
+            <li><a href="#popular">Popular Software</a></li>
+            <li><a href="#recommended">Recommended Software</a>
+              <ul>
+                <li><a href="#os">Operating System</a></li>
+                <li><a href="#productiviy">Productivity</a></li>
+                <ul>
+                  <li><a href="#office">Office Suite</a></li>
+                  <li><a href="#pdf">PDF Editor</a></li>
+                </ul>
+                <li><a href="#creative">Creative</a></li>
+                <ul>
+                  <li><a href="#image-manipulation">Image Manipulation</a></li>
+                  <li><a href="#vector">Vector Graphic Editor</a></li>
+                  <li><a href="#video">Video Editor</a></li>
+                  <li><a href="#screen">Screen Recorder/Streaming</a></li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <!-- Sidebar END -->
@@ -92,15 +112,17 @@
             target="_blank">[S]</a></sup></div>
       <!-- Alert Box ENDS -->
       <h2 id="popular">Popular Softwares</h2>
-      <small class="text-muted">List of alternative to popular apps.</small>
+      <small class="text-muted">List of popular software and their alternatives.</small>
       <div class="table-responsive bg-gray-0 rounded mt-3 mb-5">
         <table class="table table-hover align-middle">
           <thead>
             <tr class="bg-blue-8 text-light text-center">
               <th scope="col" class="col-4">Application</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
               <th scope="col" class="col-4">Alternative</th>
-              <th scope="col" class="col-2">Free?</th>
-              <th scope="col" class="col-2">Open Source?</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
             </tr>
           </thead>
           <tbody>
@@ -112,6 +134,8 @@
           </tr> -->
             <tr>
               <td rowspan="2"><img src="./assets/img/software/MS-Windows.png" alt="" width="32" height="32" title="Microsoft Windows">Microsoft Windows</td>
+              <td rowspan="2" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td rowspan="2" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://www.linuxmint.com/" target="_blank" class=""><img src="./assets/img/software/Linux-Mint.png" alt="" width="32" height="32" title="Linux Mint">Linux Mint<a /></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
@@ -123,12 +147,16 @@
             </tr>
             <tr>
               <td><img src="./assets/img/software/MS-Office.png" alt="" width="32" height="32" title="Microsoft Office">Microsoft Office</td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://libreoffice.org/" target="_blank" class=""><img src="./assets/img/software/Libre-Office.png" alt="" width="32" height="32" title="Libre Office">Libre Office</a></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
             </tr>
             <tr>
               <td rowspan="3"><img src="./assets/img/software/Photoshop.png" alt="" width="32" height="32" title="Photohop">Adobe Photoshop</td>
+              <td rowspan="3" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td rowspan="3" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://www.gimp.org/" target="_blank" class=""><img src="./assets/img/software/GIMP.png" alt="" width="32" height="32" title="Placeholder">GIMP</a></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
@@ -145,18 +173,24 @@
             </tr>
             <tr>
               <td><img src="./assets/img/software/Illustrator.png" alt="" width="32" height="32" title="Illustrator">Adobe Illustrator</td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://inkscape.org/" target="_blank" class=""><img src="./assets/img/software/Inkscape.png" alt="" width="32" height="32" title="Inkscape">Inkscape</a></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
             </tr>
             <tr>
               <td><img src="./assets/img/software/Lightroom.png" alt="" width="32" height="32" title="Lightroom">Adobe Lightroom</td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://www.darktable.org/" target="_blank" class=""><img src="./assets/img/software/Darktable.png" alt="" width="32" height="32" title="Darktable">DarkTable</a></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
               <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
             </tr>
             <tr>
               <td rowspan="4"><img src="./assets/img/software/AutoCAD.png" alt="" width="32" height="32" title="AutoCAD">AutoCAD</td>
+              <td rowspan="4" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td rowspan="4" class="text-center"><i class="fas fa-times-circle red-9"></i></td>
               <td><a href="https://www.autodesk.com/education/free-software/autocad" target="_blank" class=""><img src="./assets/img/software/AutoCAD.png" alt="" width="32" height="32" title="AutoCAD">AutoCAD For Education</a></td>
               <td class="text-center"><i class="fas fa-check-circle yellow-9" data-toggle="tooltip" data-placement="top" title="Free 1 Year License For Student Only"></i></td>
               <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
@@ -186,9 +220,159 @@
           </tbody>
         </table>
       </div>
-      <h2 id="recommended">Recommended Apps</h2>
-
-<span>To Be Added.</span>
+      <h2 id="recommended">Recommended Application</h2>
+      <small class="text-muted">Recommended Software and application.</small>
+      <h4 id="os" class="mt-3">Operating System</h4>
+      <div class="table-responsive bg-gray-0 rounded mt-3 mb-5">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr class="bg-blue-8 text-light text-center">
+              <th scope="col" class="col-5">Application</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
+              <th scope="col" class="col-5">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://www.microsoft.com/en-my/windows/get-windows-10" target="_blank" class=""><img src="./assets/img/software/MS-Windows.png" alt="" width="32" height="32" title="Microsoft Windows">Microsoft Windows 10</a></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="">Most user are familiar with Windows ecosystem. It has tons of support and recommened for general purposes.</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.linuxmint.com/" target="_blank" class=""><img src="./assets/img/software/Linux-Mint.png" alt="" width="32" height="32" title="Linux Mint">Linux Mint<a /></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">Linux Mint is a free, easy to use and comfortable GNU/Linux desktop distribution. It is recommended for newcomers of the linux ecosystem.</td>
+            </tr>
+            <tr>
+              <td><a href="https://ubuntu.com/" target="_blank" class=""><img src="./assets/img/software/Ubuntu.png" alt="" width="32" height="32" title="Ubuntu">Ubuntu<a /></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">Ubuntu is the most popular Linux desktop distribution. It is stable and has great software compatibility.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Divider -->
+      <h4 id="productiviy" class="mt-3">Productivity</h4>
+      <small class="text-muted mt-3">Office suite applications.</small>
+      <div class="table-responsive bg-gray-0 rounded mb-3">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr class="bg-blue-8 text-light text-center">
+              <th scope="col" class="col-5">Application</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
+              <th scope="col" class="col-5">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://www.microsoft.com/en-my/windows/get-windows-10" target="_blank" class=""><img src="./assets/img/software/MS-Office.png" alt="" width="32" height="32" title="Microsoft Office">Microsoft Office</td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="">MS Office is the most popular office suite in the world. It is de facto standard among large corporations.</td>
+            </tr>
+            <tr>
+              <td><a href="https://libreoffice.org/" target="_blank" class=""><img src="./assets/img/software/Libre-Office.png" alt="" width="32" height="32" title="Libre Office">Libre Office</a></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">LibreOffice is a free and open-source office suite. LibreOffice is compatible with most of the common file formats from Microsoft Office Suite.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <small id="pdf" class="text-muted">PDF viewer and editor.</small>
+      <div class="table-responsive bg-gray-0 rounded">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr class="bg-blue-8 text-light text-center">
+              <th scope="col" class="col-5">Application</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
+              <th scope="col" class="col-5">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://libreoffice.org/" target="_blank" class=""><img src="./assets/img/software/Libre-Office.png" alt="" width="32" height="32" title="Libre Office">Libre Office</a></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">LibreOffice is a free and open-source office suite. LibreOffice is supports the editing of PDF documents by default and opens them in the LibreOffice Draw.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Divider -->
+      <h4 id="creative" class="mt-3">Creative</h4>
+      <small class="text-muted">Image Manipulation and drawing.</small>
+      <div class="table-responsive bg-gray-0 rounded mb-3">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr class="bg-blue-8 text-light text-center">
+              <th scope="col" class="col-5">Application</th>
+              <th scope="col" class="col-1">Free?</th>
+              <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
+              <th scope="col" class="col-5">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://www.microsoft.com/en-my/windows/get-windows-10" target="_blank" class=""><img src="./assets/img/software/Photoshop.png" alt="" width="32" height="32" title="Photohop">Adobe Photoshop</td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+              <td class="">Photoshop is the industry standard not only in raster graphics editing, but in digital art as a whole.</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.gimp.org/" target="_blank" class=""><img src="./assets/img/software/GIMP.png" alt="" width="32" height="32" title="Placeholder">GIMP</a></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.</td>
+            </tr>
+            <tr>
+              <td><a href="https://krita.org/" target="_blank" class=""><img src="./assets/img/software/Krita.png" alt="" width="32" height="32" title="Krita">Krita<a /></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+              <td class="">Krita is a free and open-source raster graphics editor designed primarily for digital painting and 2D animation. .</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <small id="vector" class="text-muted">Design and Vector Graphic Editor.</small>
+        <div class="table-responsive bg-gray-0 rounded">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr class="bg-blue-8 text-light text-center">
+                <th scope="col" class="col-5">Application</th>
+                <th scope="col" class="col-1">Free?</th>
+                <th scope="col" class="col-1" data-toggle="tooltip" data-placement="top" title="Open Source Software">OSS?</th>
+                <th scope="col" class="col-5">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./assets/img/software/Illustrator.png" alt="" width="32" height="32" title="Illustrator">Adobe Illustrator</td>
+                <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+                <td class="text-center"><i class="fas fa-times-circle red-9"></i></td>
+                <td class="">Photoshop is the industry standard not only in raster graphics editing, but in digital art as a whole.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.gimp.org/" target="_blank" class=""><img src="./assets/img/software/GIMP.png" alt="" width="32" height="32" title="Placeholder">GIMP</a></td>
+                <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+                <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+                <td class="">GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.</td>
+              </tr>
+              <tr>
+                <td><a href="https://krita.org/" target="_blank" class=""><img src="./assets/img/software/Krita.png" alt="" width="32" height="32" title="Krita">Krita<a /></td>
+                <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+                <td class="text-center"><i class="fas fa-check-circle green-9"></i></td>
+                <td class="">Krita is a free and open-source raster graphics editor designed primarily for digital painting and 2D animation. .</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
 
       <!-- Content Ends -->
 

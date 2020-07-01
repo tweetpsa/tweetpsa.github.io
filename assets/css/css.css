@@ -309,3 +309,11 @@ kbd {
     min-height: 150px;
     object-fit: cover;
 }
+
+.software-nav nav a:not(:hover) {
+    text-decoration: none;
+}
+
+.table {
+  margin-bottom: 0px!important;
+}
